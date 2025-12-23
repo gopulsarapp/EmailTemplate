@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Email Templates Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --border: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22c55e;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #020617, #020617);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at top left,
+        rgba(34, 197, 94, 0.12),
+        transparent 60%
+      );
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .card:hover::after {
+      opacity: 1;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .open-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: var(--accent);
+      color: #052e16;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 48px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer span {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Email Template Library</h1>
+      <p>Select a template below to preview or use</p>
+    </header>
+
+    <section class="grid">
+      <div class="card" onclick="openTemplate('MSG/index.html')">
+        <h3>Template 1</h3>
+        <p>Primary email design – clean & professional.</p>
+        <a class="open-btn" href="MSG/index.html" target="_blank">Open</a>
+      </div>
+
+      <div class="card" onclick="openTemplate('MSG/index1.html')">
+        <h3>Template 2</h3>
+        <p>Modern layout with emphasis on content.</p>
+        <a class="open-btn" href="MSG/index1.html" target="_blank">Open</a>
+      </div>
+
+      <div class="card" onclick="openTemplate('MSG/index2.html')">
+        <h3>Template 3</h3>
+        <p>Minimal style for announcements.</p>
+        <a class="open-btn" href="MSG/index2.html" target="_blank">Open</a>
+      </div>
+
+      <div class="card" onclick="openTemplate('MSG/index3.html')">
+        <h3>Template 4</h3>
+        <p>Bold design with strong headings.</p>
+        <a class="open-btn" href="MSG/index3.html" target="_blank">Open</a>
+      </div>
+
+      <div class="card" onclick="openTemplate('MSG/index4.html')">
+        <h3>Template 5</h3>
+        <p>Elegant layout for formal communication.</p>
+        <a class="open-btn" href="MSG/index4.html" target="_blank">Open</a>
+      </div>
+    </section>
+
+    <footer>
+      Built for <span>South High School Community</span> · Email Template Dashboard
+    </footer>
+  </div>
+
+  <script>
+    function openTemplate(path) {
+      window.open(path, "_blank");
+    }
+  </script>
+</body>
+</html>
