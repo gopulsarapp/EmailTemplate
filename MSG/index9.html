@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>The Automation Playbook</title>
+  <title>What Happens During a Cyberattack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -39,11 +39,11 @@
           <tr>
             <td style="padding:32px;">
               <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:700;">
-                The Automation Playbook
+                What Happens During a Cyberattack
               </h1>
               <p style="margin:0; font-size:16px; line-height:1.6; color:#334155;">
-                Your team is smart—but they shouldn’t be stuck doing repetitive work.
-                Automation creates <strong>instant efficiency wins</strong> without hiring more staff.
+                Cyberattacks don’t take days to cause damage.
+                In many cases, <strong>the first 30 minutes decide everything</strong>.
               </p>
             </td>
           </tr>
@@ -52,76 +52,89 @@
           <tr>
             <td style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:15px; line-height:1.6; color:#475569;">
-                Most SMBs don’t realize how much time is lost to tasks that
-                can be automated safely, reliably, and affordably.
+                The difference between a minor incident and a full business outage
+                often comes down to <strong>how quickly the attack is detected</strong>.
               </p>
             </td>
           </tr>
 
-          <!-- TASK LIST -->
-          <tr>
-            <td style="padding:0 32px 24px 32px;">
-              <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:700;">
-                10 Tasks You Should Never Do Manually
-              </h3>
-              <ul style="margin:0; padding-left:18px; font-size:15px; line-height:1.7; color:#475569;">
-                <li>User onboarding & offboarding</li>
-                <li>Password resets</li>
-                <li>Software updates & patching</li>
-                <li>Data backups & verification</li>
-                <li>System health monitoring</li>
-                <li>Access permission changes</li>
-                <li>Recurring reports</li>
-                <li>Security alerts & escalation</li>
-                <li>License tracking</li>
-                <li>Routine maintenance checks</li>
-              </ul>
-            </td>
-          </tr>
-
-          <!-- FLOWCHART -->
+          <!-- TIMELINE -->
           <tr>
             <td style="padding:0 32px 32px 32px;">
 
               <h3 style="margin:0 0 16px 0; font-size:18px; font-weight:700;">
-                Manual vs Automated Workflow
+                A Typical Cyberattack Timeline
               </h3>
 
               <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
 
+                <!-- Minute 0 -->
                 <tr>
-                  <!-- MANUAL -->
-                  <td width="50%" valign="top" style="padding:8px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
-                      style="background:#FFFFFF; border:1px solid #FCA5A5; border-radius:10px;">
-                      <tr>
-                        <td style="padding:14px; font-weight:700; color:#991B1B; border-bottom:1px solid #FECACA;">
-                          ❌ Manual Process
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:14px; font-size:14px; line-height:1.6; color:#7F1D1D;">
-                          Request → Email → Wait → Human Action → Error Risk → Delay → Repeat
-                        </td>
-                      </tr>
-                    </table>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#991B1B;">
+                    Minute 0
                   </td>
+                  <td style="padding:12px; background:#FEE2E2; border-radius:8px;">
+                    Initial breach via phishing email or stolen credentials.
+                  </td>
+                </tr>
 
-                  <!-- AUTOMATED -->
-                  <td width="50%" valign="top" style="padding:8px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
-                      style="background:#FFFFFF; border:1px solid #86EFAC; border-radius:10px;">
-                      <tr>
-                        <td style="padding:14px; font-weight:700; color:#065F46; border-bottom:1px solid #BBF7D0;">
-                          ✅ Automated Process
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:14px; font-size:14px; line-height:1.6; color:#065F46;">
-                          Trigger → Automation Rule → Instant Action → Logged → Verified
-                        </td>
-                      </tr>
-                    </table>
+                <tr><td height="10"></td></tr>
+
+                <!-- Minute 5 -->
+                <tr>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#9A3412;">
+                    Minute 5
+                  </td>
+                  <td style="padding:12px; background:#FFEDD5; border-radius:8px;">
+                    Attacker establishes persistence and explores the network.
+                  </td>
+                </tr>
+
+                <tr><td height="10"></td></tr>
+
+                <!-- Minute 15 -->
+                <tr>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#92400E;">
+                    Minute 15
+                  </td>
+                  <td style="padding:12px; background:#FEF3C7; border-radius:8px;">
+                    Privilege escalation begins; security gaps are exploited.
+                  </td>
+                </tr>
+
+                <tr><td height="10"></td></tr>
+
+                <!-- Minute 30 -->
+                <tr>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#065F46;">
+                    Minute 30
+                  </td>
+                  <td style="padding:12px; background:#DCFCE7; border-radius:8px;">
+                    <strong>With monitoring:</strong> Threat detected and contained.
+                  </td>
+                </tr>
+
+                <tr><td height="10"></td></tr>
+
+                <!-- Hour 2 -->
+                <tr>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#7F1D1D;">
+                    Hour 2
+                  </td>
+                  <td style="padding:12px; background:#FCA5A5; border-radius:8px;">
+                    <strong>Without monitoring:</strong> Data exfiltration or ransomware deployment.
+                  </td>
+                </tr>
+
+                <tr><td height="10"></td></tr>
+
+                <!-- Day 1 -->
+                <tr>
+                  <td width="80" valign="top" style="font-size:14px; font-weight:700; color:#7F1D1D;">
+                    Day 1+
+                  </td>
+                  <td style="padding:12px; background:#F87171; border-radius:8px; color:#FFFFFF;">
+                    Business outage, recovery costs, legal exposure, and reputational damage.
                   </td>
                 </tr>
 
@@ -134,8 +147,8 @@
           <tr>
             <td style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:16px; line-height:1.6;">
-                Automation doesn’t replace people—it gives them time back
-                to focus on work that actually moves the business forward.
+                Attackers move fast.
+                If detection takes hours—or days—the damage is already done.
               </p>
             </td>
           </tr>
@@ -144,7 +157,7 @@
           <tr>
             <td align="center" style="padding:0 32px 40px 32px;">
               <p style="margin:0 0 20px 0; font-size:16px;">
-                Curious where automation could help you the most?
+                Do you know how quickly your business would detect an attack?
               </p>
               <a
                 href="https://novotek.ai/"
@@ -159,7 +172,7 @@
                   font-weight:600;
                 "
               >
-                Get My Automation Opportunity Map
+                Test Your Detection & Response Readiness
               </a>
             </td>
           </tr>
@@ -181,7 +194,6 @@
           </tr>
 
         </table>
-
       </td>
     </tr>
   </table>
