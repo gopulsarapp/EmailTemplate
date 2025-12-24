@@ -4,40 +4,68 @@
   <meta charset="UTF-8" />
   <title>The Cybersecurity Layer Cake</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @media screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+      .padding {
+        padding: 20px !important;
+      }
+      h1 {
+        font-size: 22px !important;
+      }
+      .responsive-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin:0; padding:0; background-color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
+<body style="margin:0; padding:0; background-color:#F1F5F9; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
 
   <!-- Wrapper -->
-  <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#FFFFFF;">
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
-      <td align="center" style="padding:32px;">
+      <td align="center" style="padding:24px;">
 
         <!-- MAIN CONTAINER -->
-        <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+        <table
+          width="600"
+          cellpadding="0"
+          cellspacing="0"
+          role="presentation"
+          class="container"
           style="
             max-width:600px;
+            width:100%;
             background-color:#F8FAFC;
             border-radius:12px;
             overflow:hidden;
             border:1px solid #E5E7EB;
-          ">
+            box-shadow:0 12px 28px rgba(15,23,42,0.12);
+          "
+        >
 
           <!-- Header -->
           <tr>
-            <td align="center" style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
+            <td align="center" class="padding"
+              style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
               <img
                 src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1766515000/logo2_black_wuqqiu.svg"
                 alt="Novotek"
                 width="160"
-                style="display:block;"
+                style="display:block; max-width:100%; height:auto;"
               />
             </td>
           </tr>
 
           <!-- Hero -->
           <tr>
-            <td style="padding:32px;">
+            <td class="padding" style="padding:32px;">
               <h1 style="margin:0 0 12px 0; font-size:26px; line-height:1.3; font-weight:700;">
                 The Cybersecurity Layer Cake
               </h1>
@@ -52,7 +80,7 @@
 
           <!-- CONTEXT -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:15px; line-height:1.6; color:#475569;">
                 When one layer fails, another catches the threat.
                 This layered approach is how modern SMBs reduce risk,
@@ -63,94 +91,31 @@
 
           <!-- LAYER CAKE DIAGRAM -->
           <tr>
-            <td style="padding:0 32px 32px 32px;">
-
+            <td class="padding" style="padding:0 32px 32px 32px;">
               <h3 style="margin:0 0 16px 0; font-size:18px; font-weight:700;">
                 How Layered Cybersecurity Works
               </h3>
 
-              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-
-                <!-- Layer 1 -->
-                <tr>
-                  <td style="
-                    background-color:#0F172A;
-                    color:#FFFFFF;
-                    padding:16px;
-                    border-radius:8px 8px 0 0;
-                    font-size:15px;
-                    font-weight:600;
-                  ">
-                    🎓 Security Awareness Training
-                    <p style="margin:6px 0 0 0; font-size:13px; font-weight:400; color:#E5E7EB;">
-                      Reduces human error and phishing success
-                    </p>
-                  </td>
-                </tr>
-
-                <tr><td height="6"></td></tr>
-
-                <!-- Layer 2 -->
-                <tr>
-                  <td style="
-                    background-color:#1E293B;
-                    color:#FFFFFF;
-                    padding:16px;
-                    font-size:15px;
-                    font-weight:600;
-                  ">
-                    👀 24/7 Monitoring & Detection
-                    <p style="margin:6px 0 0 0; font-size:13px; font-weight:400; color:#CBD5E1;">
-                      Detects suspicious activity in real time
-                    </p>
-                  </td>
-                </tr>
-
-                <tr><td height="6"></td></tr>
-
-                <!-- Layer 3 -->
-                <tr>
-                  <td style="
-                    background-color:#334155;
-                    color:#FFFFFF;
-                    padding:16px;
-                    font-size:15px;
-                    font-weight:600;
-                  ">
-                    💻 Endpoint Protection
-                    <p style="margin:6px 0 0 0; font-size:13px; font-weight:400; color:#E2E8F0;">
-                      Protects laptops, servers, and mobile devices
-                    </p>
-                  </td>
-                </tr>
-
-                <tr><td height="6"></td></tr>
-
-                <!-- Layer 4 -->
-                <tr>
-                  <td style="
-                    background-color:#475569;
-                    color:#FFFFFF;
-                    padding:16px;
-                    border-radius:0 0 8px 8px;
-                    font-size:15px;
-                    font-weight:600;
-                  ">
-                    🔥 Network Firewall & Access Control
-                    <p style="margin:6px 0 0 0; font-size:13px; font-weight:400; color:#F1F5F9;">
-                      Blocks unauthorized access at the perimeter
-                    </p>
-                  </td>
-                </tr>
-
-              </table>
-
+              <img
+                src="img/image6.png"
+                alt="Cybersecurity Layer Cake Diagram"
+                class="responsive-img"
+                style="
+                  width:100%;
+                  max-width:100%;
+                  height:auto;
+                  display:block;
+                  border-radius:10px;
+                  border:1px solid #E5E7EB;
+                  box-shadow:0 8px 20px rgba(15,23,42,0.12);
+                "
+              />
             </td>
           </tr>
 
           <!-- MESSAGE -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:16px; line-height:1.6;">
                 Remove one layer, and attackers only need to get lucky once.
                 Keep them all, and threats get stopped at multiple points.
@@ -160,7 +125,7 @@
 
           <!-- CTA -->
           <tr>
-            <td align="center" style="padding:0 32px 40px 32px;">
+            <td align="center" class="padding" style="padding:0 32px 40px 32px;">
               <p style="margin:0 0 20px 0; font-size:16px; line-height:1.6;">
                 Not sure how many layers your business actually has?
               </p>
@@ -176,6 +141,7 @@
                   border-radius:6px;
                   font-size:15px;
                   font-weight:600;
+                  box-shadow:0 6px 14px rgba(15,23,42,0.25);
                 "
               >
                 Get a Free Security Stack Review
@@ -201,7 +167,6 @@
           </tr>
 
         </table>
-        <!-- END CONTAINER -->
 
       </td>
     </tr>

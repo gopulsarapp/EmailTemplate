@@ -4,40 +4,68 @@
   <meta charset="UTF-8" />
   <title>The Automation Playbook</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @media screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+      .padding {
+        padding: 20px !important;
+      }
+      h1 {
+        font-size: 22px !important;
+      }
+      .responsive-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin:0; padding:0; background-color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
+<body style="margin:0; padding:0; background-color:#F1F5F9; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
 
   <!-- Wrapper -->
   <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
-      <td align="center" style="padding:32px;">
+      <td align="center" style="padding:24px;">
 
         <!-- MAIN CONTAINER -->
-        <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+        <table
+          width="600"
+          cellpadding="0"
+          cellspacing="0"
+          role="presentation"
+          class="container"
           style="
             max-width:600px;
+            width:100%;
             background-color:#F8FAFC;
             border-radius:12px;
             overflow:hidden;
             border:1px solid #E5E7EB;
-          ">
+            box-shadow:0 12px 28px rgba(15,23,42,0.12);
+          "
+        >
 
           <!-- Header -->
           <tr>
-            <td align="center" style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
+            <td align="center" class="padding"
+              style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
               <img
                 src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1766515000/logo2_black_wuqqiu.svg"
                 alt="Novotek"
                 width="160"
-                style="display:block;"
+                style="display:block; max-width:100%; height:auto;"
               />
             </td>
           </tr>
 
           <!-- Hero -->
           <tr>
-            <td style="padding:32px;">
+            <td class="padding" style="padding:32px;">
               <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:700;">
                 The Automation Playbook
               </h1>
@@ -50,7 +78,7 @@
 
           <!-- Context -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:15px; line-height:1.6; color:#475569;">
                 Most SMBs don’t realize how much time is lost to tasks that
                 can be automated safely, reliably, and affordably.
@@ -60,7 +88,7 @@
 
           <!-- TASK LIST -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <h3 style="margin:0 0 12px 0; font-size:18px; font-weight:700;">
                 10 Tasks You Should Never Do Manually
               </h3>
@@ -79,60 +107,33 @@
             </td>
           </tr>
 
-          <!-- FLOWCHART -->
+          <!-- FLOWCHART IMAGE -->
           <tr>
-            <td style="padding:0 32px 32px 32px;">
-
+            <td class="padding" style="padding:0 32px 32px 32px;">
               <h3 style="margin:0 0 16px 0; font-size:18px; font-weight:700;">
                 Manual vs Automated Workflow
               </h3>
 
-              <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
-
-                <tr>
-                  <!-- MANUAL -->
-                  <td width="50%" valign="top" style="padding:8px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
-                      style="background:#FFFFFF; border:1px solid #FCA5A5; border-radius:10px;">
-                      <tr>
-                        <td style="padding:14px; font-weight:700; color:#991B1B; border-bottom:1px solid #FECACA;">
-                          ❌ Manual Process
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:14px; font-size:14px; line-height:1.6; color:#7F1D1D;">
-                          Request → Email → Wait → Human Action → Error Risk → Delay → Repeat
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-
-                  <!-- AUTOMATED -->
-                  <td width="50%" valign="top" style="padding:8px;">
-                    <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
-                      style="background:#FFFFFF; border:1px solid #86EFAC; border-radius:10px;">
-                      <tr>
-                        <td style="padding:14px; font-weight:700; color:#065F46; border-bottom:1px solid #BBF7D0;">
-                          ✅ Automated Process
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="padding:14px; font-size:14px; line-height:1.6; color:#065F46;">
-                          Trigger → Automation Rule → Instant Action → Logged → Verified
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-
-              </table>
-
+              <img
+                src="img/image.png"
+                alt="Manual vs Automated Workflow"
+                class="responsive-img"
+                style="
+                  width:100%;
+                  max-width:100%;
+                  height:auto;
+                  display:block;
+                  border-radius:10px;
+                  border:1px solid #E5E7EB;
+                  box-shadow:0 8px 20px rgba(15,23,42,0.12);
+                "
+              />
             </td>
           </tr>
 
           <!-- Message -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:16px; line-height:1.6;">
                 Automation doesn’t replace people—it gives them time back
                 to focus on work that actually moves the business forward.
@@ -142,7 +143,7 @@
 
           <!-- CTA -->
           <tr>
-            <td align="center" style="padding:0 32px 40px 32px;">
+            <td align="center" class="padding" style="padding:0 32px 40px 32px;">
               <p style="margin:0 0 20px 0; font-size:16px;">
                 Curious where automation could help you the most?
               </p>
@@ -157,6 +158,7 @@
                   border-radius:6px;
                   font-size:15px;
                   font-weight:600;
+                  box-shadow:0 6px 14px rgba(15,23,42,0.25);
                 "
               >
                 Get My Automation Opportunity Map

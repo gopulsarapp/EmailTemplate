@@ -4,40 +4,68 @@
   <meta charset="UTF-8" />
   <title>Why “We Already Have IT” Often Fails During Critical Moments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    @media screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+        border-radius: 0 !important;
+      }
+      .padding {
+        padding: 20px !important;
+      }
+      h1 {
+        font-size: 22px !important;
+      }
+      .responsive-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
 </head>
 
-<body style="margin:0; padding:0; background-color:#FFFFFF; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
+<body style="margin:0; padding:0; background-color:#F1F5F9; font-family:Arial, Helvetica, sans-serif; color:#0F172A;">
 
   <!-- Wrapper -->
   <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
     <tr>
-      <td align="center" style="padding:32px;">
+      <td align="center" style="padding:24px;">
 
         <!-- MAIN CONTAINER -->
-        <table width="600" cellpadding="0" cellspacing="0" role="presentation"
+        <table
+          width="600"
+          cellpadding="0"
+          cellspacing="0"
+          role="presentation"
+          class="container"
           style="
             max-width:600px;
+            width:100%;
             background-color:#F8FAFC;
             border-radius:12px;
             overflow:hidden;
             border:1px solid #E5E7EB;
-          ">
+            box-shadow:0 12px 28px rgba(15,23,42,0.12);
+          "
+        >
 
           <!-- Header -->
           <tr>
-            <td align="center" style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
+            <td align="center" class="padding"
+              style="padding:24px; background-color:#FFFFFF; border-bottom:1px solid #E5E7EB;">
               <img
                 src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1766515000/logo2_black_wuqqiu.svg"
                 alt="Novotek"
                 width="160"
-                style="display:block;"
+                style="display:block; max-width:100%; height:auto;"
               />
             </td>
           </tr>
 
           <!-- Hero -->
           <tr>
-            <td style="padding:32px;">
+            <td class="padding" style="padding:32px;">
               <h1 style="margin:0 0 12px 0; font-size:26px; font-weight:700;">
                 Why “We Already Have IT” Often Fails During Critical Moments
               </h1>
@@ -50,7 +78,7 @@
 
           <!-- Context -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:15px; line-height:1.6; color:#475569;">
                 Internal IT teams are valuable—but they’re often stretched thin.
                 When a critical incident hits, the gap between <strong>internal IT</strong> and a
@@ -59,109 +87,33 @@
             </td>
           </tr>
 
-          <!-- COMPARISON TABLE -->
+          <!-- COMPARISON IMAGE -->
           <tr>
-            <td style="padding:0 32px 32px 32px;">
-
+            <td class="padding" style="padding:0 32px 32px 32px;">
               <h3 style="margin:0 0 16px 0; font-size:18px; font-weight:700;">
                 In-House IT vs Managed IT (MSP)
               </h3>
 
-              <table width="100%" cellpadding="0" cellspacing="0" role="presentation"
+              <img
+                src="img/image10.png"
+                alt="In-House IT vs Managed IT"
+                class="responsive-img"
                 style="
-                  border-collapse:collapse;
-                  background-color:#FFFFFF;
-                  border:1px solid #E5E7EB;
+                  width:100%;
+                  max-width:100%;
+                  height:auto;
+                  display:block;
                   border-radius:10px;
-                  overflow:hidden;
-                ">
-
-                <!-- Header Row -->
-                <tr>
-                  <td style="padding:12px; font-size:14px; font-weight:700; border-bottom:1px solid #E5E7EB;">
-                    Capability
-                  </td>
-                  <td style="padding:12px; font-size:14px; font-weight:700; border-bottom:1px solid #E5E7EB;">
-                    In-House IT
-                  </td>
-                  <td style="padding:12px; font-size:14px; font-weight:700; border-bottom:1px solid #E5E7EB;">
-                    Managed IT (MSP)
-                  </td>
-                </tr>
-
-                <!-- Row 1 -->
-                <tr>
-                  <td style="padding:12px; font-size:14px; border-bottom:1px solid #F1F5F9;">
-                    24/7 Monitoring
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#92400E; border-bottom:1px solid #F1F5F9;">
-                    ❌ Business hours only
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#065F46; font-weight:600; border-bottom:1px solid #F1F5F9;">
-                    ✅ Always on
-                  </td>
-                </tr>
-
-                <!-- Row 2 -->
-                <tr>
-                  <td style="padding:12px; font-size:14px; border-bottom:1px solid #F1F5F9;">
-                    Incident Response Speed
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#92400E; border-bottom:1px solid #F1F5F9;">
-                    Depends on availability
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#065F46; font-weight:600; border-bottom:1px solid #F1F5F9;">
-                    SLA-backed response
-                  </td>
-                </tr>
-
-                <!-- Row 3 -->
-                <tr>
-                  <td style="padding:12px; font-size:14px; border-bottom:1px solid #F1F5F9;">
-                    Cybersecurity Coverage
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#92400E; border-bottom:1px solid #F1F5F9;">
-                    Limited tools & time
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#065F46; font-weight:600; border-bottom:1px solid #F1F5F9;">
-                    Layered & managed
-                  </td>
-                </tr>
-
-                <!-- Row 4 -->
-                <tr>
-                  <td style="padding:12px; font-size:14px; border-bottom:1px solid #F1F5F9;">
-                    Coverage During PTO / Sick Leave
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#991B1B; border-bottom:1px solid #F1F5F9;">
-                    ❌ Gaps
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#065F46; font-weight:600; border-bottom:1px solid #F1F5F9;">
-                    ✅ Fully covered
-                  </td>
-                </tr>
-
-                <!-- Row 5 -->
-                <tr>
-                  <td style="padding:12px; font-size:14px;">
-                    Strategic IT Planning
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#475569;">
-                    Reactive & tactical
-                  </td>
-                  <td style="padding:12px; font-size:14px; color:#065F46; font-weight:600;">
-                    Proactive & aligned to growth
-                  </td>
-                </tr>
-
-              </table>
-
+                  border:1px solid #E5E7EB;
+                  box-shadow:0 8px 20px rgba(15,23,42,0.12);
+                "
+              />
             </td>
           </tr>
 
           <!-- Message -->
           <tr>
-            <td style="padding:0 32px 24px 32px;">
+            <td class="padding" style="padding:0 32px 24px 32px;">
               <p style="margin:0; font-size:16px; line-height:1.6;">
                 Managed IT doesn’t replace internal IT—it <strong>supports and strengthens it</strong>,
                 especially when incidents happen outside the 9-to-5 window.
@@ -171,7 +123,7 @@
 
           <!-- CTA -->
           <tr>
-            <td align="center" style="padding:0 32px 40px 32px;">
+            <td align="center" class="padding" style="padding:0 32px 40px 32px;">
               <p style="margin:0 0 20px 0; font-size:16px;">
                 Want to see where your current setup may fall short?
               </p>
@@ -186,6 +138,7 @@
                   border-radius:6px;
                   font-size:15px;
                   font-weight:600;
+                  box-shadow:0 6px 14px rgba(15,23,42,0.25);
                 "
               >
                 Compare Your IT Coverage
