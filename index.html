@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Email Templates Dashboard</title>
+  <title>Email Template Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #111827;
+      --bg: #020617;
+      --card: #0f172a;
       --border: #1f2937;
       --text: #e5e7eb;
       --muted: #9ca3af;
-      --accent: #22c55e;
+      --variation: #22c55e;
+      --standard: #64748b;
+      --info: #38bdf8;
     }
 
     * {
@@ -22,106 +24,142 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
-      background: linear-gradient(135deg, #020617, #020617);
+      background: var(--bg);
       color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
       padding: 32px;
     }
 
     .container {
-      width: 100%;
-      max-width: 1100px;
+      max-width: 1300px;
+      margin: auto;
     }
 
     header {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
     }
 
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       margin-bottom: 8px;
     }
 
     header p {
       color: var(--muted);
-      font-size: 1rem;
+    }
+
+    .company {
+      margin-bottom: 56px;
+    }
+
+    .company h2 {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+      color: var(--info);
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(
-        circle at top left,
-        rgba(34, 197, 94, 0.12),
-        transparent 60%
-      );
-      opacity: 0;
-      transition: opacity 0.25s ease;
+      border-radius: 16px;
+      padding: 18px;
+      transition: 0.25s;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
     }
 
-    .card:hover::after {
-      opacity: 1;
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      width: fit-content;
+    }
+
+    .variation {
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--variation);
+    }
+
+    .standard {
+      background: rgba(100, 116, 139, 0.2);
+      color: var(--standard);
+    }
+
+    .info {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--info);
+    }
+
+    /* ---------- IMAGE WITH WHITE BACKGROUND ---------- */
+    .image-wrapper {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 10px;
+      border: 1px solid var(--border);
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
     }
 
     .card h3 {
-      margin: 0 0 8px;
-      font-size: 1.2rem;
+      margin: 0;
+      font-size: 1.05rem;
     }
 
     .card p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      margin-bottom: 18px;
-    }
-
-    .open-btn {
-      display: inline-block;
-      padding: 10px 18px;
-      background: var(--accent);
-      color: #052e16;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
-    }
-
-    footer {
-      margin-top: 48px;
-      text-align: center;
+      margin: 0;
       font-size: 0.85rem;
       color: var(--muted);
     }
 
-    footer span {
-      color: var(--accent);
-      font-weight: 600;
+    .actions {
+      margin-top: auto;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .open {
+      background: var(--variation);
+      color: #052e16;
+    }
+
+    .image-btn {
+      background: var(--info);
+      color: #020617;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
     }
   </style>
 </head>
@@ -129,50 +167,63 @@
 <body>
   <div class="container">
     <header>
-      <h1>Email Template Library</h1>
-      <p>Select a template below to preview or use</p>
+      <h1>Email Template Gallery</h1>
+      <p>Variation & Standard templates with infographic previews</p>
     </header>
 
-    <section class="grid">
-      <div class="card" onclick="openTemplate('MSG/index.html')">
-        <h3>Template 1</h3>
-        <p>Primary email design – clean & professional.</p>
-        <a class="open-btn" href="MSG/index.html" target="_blank">Open</a>
-      </div>
-
-      <div class="card" onclick="openTemplate('MSG/index1.html')">
-        <h3>Template 2</h3>
-        <p>Modern layout with emphasis on content.</p>
-        <a class="open-btn" href="MSG/index1.html" target="_blank">Open</a>
-      </div>
-
-      <div class="card" onclick="openTemplate('MSG/index2.html')">
-        <h3>Template 3</h3>
-        <p>Minimal style for announcements.</p>
-        <a class="open-btn" href="MSG/index2.html" target="_blank">Open</a>
-      </div>
-
-      <div class="card" onclick="openTemplate('MSG/index3.html')">
-        <h3>Template 4</h3>
-        <p>Bold design with strong headings.</p>
-        <a class="open-btn" href="MSG/index3.html" target="_blank">Open</a>
-      </div>
-
-      <div class="card" onclick="openTemplate('MSG/index4.html')">
-        <h3>Template 5</h3>
-        <p>Elegant layout for formal communication.</p>
-        <a class="open-btn" href="MSG/index4.html" target="_blank">Open</a>
-      </div>
-    </section>
+    <div id="dashboard"></div>
 
     <footer>
-      Built for <span>South High School Community</span> · Email Template Dashboard
+      Built for <strong>Sohit Mishra</strong>
     </footer>
   </div>
 
   <script>
-    function openTemplate(path) {
-      window.open(path, "_blank");
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => render(data.companies))
+      .catch(err => console.error("JSON load error", err))
+
+    function render(companies) {
+      const dashboard = document.getElementById("dashboard")
+
+      companies.forEach(company => {
+        const section = document.createElement("section")
+        section.className = "company"
+
+        section.innerHTML = `
+          <h2>${company.companyTitle}</h2>
+          <div class="grid">
+            ${company.templates.map(t => `
+              <div class="card">
+
+                ${t.image ? `
+                  <div class="image-wrapper">
+                    <img src="${t.image}" alt="Template preview" />
+                  </div>
+                ` : ""}
+
+                <span class="badge ${t.category === "variation" ? "variation" : "standard"}">
+                  ${t.category === "variation" ? "Variation Template" : "Standard Template"}
+                </span>
+
+                ${t.image ? `<span class="badge info">Infographic / Image</span>` : ""}
+
+                <h3>${t.name}</h3>
+                <p>${t.file}</p>
+
+                <div class="actions">
+                  <a class="btn open" href="${t.file}" target="_blank">Open Email</a>
+                  ${t.image ? `<a class="btn image-btn" href="${t.image}" target="_blank">View Image</a>` : ""}
+                </div>
+
+              </div>
+            `).join("")}
+          </div>
+        `
+
+        dashboard.appendChild(section)
+      })
     }
   </script>
 </body>

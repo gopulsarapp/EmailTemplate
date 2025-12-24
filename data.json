@@ -1,0 +1,169 @@
+{
+  "companies": [
+    {
+      "companyTitle": "Pulsar",
+      "templates": [
+        {
+          "name": "Template 2",
+          "file": "Pulsar/index2.html",
+          "category": "variation"
+        },
+        {
+          "name": "Template 3",
+          "file": "Pulsar/index3.html",
+          "category": "variation"
+        },
+        {
+          "name": "Template 4",
+          "file": "Pulsar/index4.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 5",
+          "file": "Pulsar/index5.html",
+          "category": "non-variation"
+        }
+      ]
+    },
+    {
+      "companyTitle": "Instabuild",
+      "templates": [
+        {
+          "name": "Product Update",
+          "file": "Instabuild/index2.html",
+          "category": "variation"
+        },
+        {
+          "name": "Marketing Blast",
+          "file": "Instabuild/index3.html",
+          "category": "variation"
+        },
+        {
+          "name": "Transactional Email",
+          "file": "Instabuild/index4.html",
+          "category": "variation"
+        },
+        {
+          "name": "System Notification",
+          "file": "Instabuild/index5.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Support Email",
+          "file": "Instabuild/index6.html",
+          "category": "non-variation"
+        }
+      ]
+    },
+    {
+      "companyTitle": "Novotek.ai",
+      "templates": [
+        {
+          "name": "Corporate Email",
+          "file": "MSG/variation/index.html",
+          "category": "variation"
+        },
+        {
+          "name": "Corporate Email Alt",
+          "file": "MSG/variation/index1.html",
+          "category": "variation"
+        },
+        {
+          "name": "Security Alert",
+          "file": "MSG/variation/index2.html",
+          "category": "variation"
+        },
+        {
+          "name": "Newsletter",
+          "file": "MSG/variation/index3.html",
+          "category": "variation"
+        },
+        {
+          "name": "Campaign Email",
+          "file": "MSG/variation/index4.html",
+          "category": "variation"
+        },
+        {
+          "name": "Incident Report",
+          "file": "MSG/index.html",
+          "category": "non-variation",
+          "image": "MSG/img/image.png"
+        },
+        {
+          "name": "Internal Update",
+          "file": "MSG/index2.html",
+          "category": "non-variation",
+          "image": "MSG/img/image2.png"
+        },
+        {
+          "name": "Automation Notice",
+          "file": "MSG/index3.html",
+          "category": "non-variation",
+            "image": "MSG/img/image3.png"
+        },
+        {
+          "name": "Incident Report",
+          "file": "MSG/index4.html",
+          "category": "non-variation",
+            "image": "MSG/img/image4.png"
+        },
+        {
+          "name": "Internal Update",
+          "file": "MSG/index5.html",
+          "category": "non-variation",
+          "image": "MSG/img/image5.png"
+        },
+        {
+          "name": "Incident Report",
+          "file": "MSG/index6.html",
+          "category": "non-variation",
+          "image": "MSG/img/image6.png"
+        },
+        {
+          "name": "Internal Update",
+          "file": "MSG/index7.html",
+          "category": "non-variation",
+          "image": "MSG/img/image7.png"
+        },
+        {
+          "name": "Automation Notice",
+          "file": "MSG/index8.html",
+          "category": "non-variation",
+          "image": "MSG/img/image8.png"
+        },
+        {
+          "name": "Incident Report",
+          "file": "MSG/index9.html",
+          "category": "non-variation",
+          "image": "MSG/img/image9.png"
+        },
+        {
+          "name": "Internal Update",
+          "file": "MSG/index10.html",
+          "category": "non-variation",
+          "image": "MSG/img/image10.png"
+        }
+      ]
+    },
+    {
+      "companyTitle": "EcoFocus",
+      "templates": [
+        {
+          "name": "Sustainability Update",
+          "file": "Ecofocus/index2.html",
+          "category": "variation"
+        },
+        {
+          "name": "Compliance Alert",
+          "file": "Ecofocus/index3.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Investor Communication",
+          "file": "Ecofocus/index4.html",
+          "category": "non-variation"
+        }
+      ]
+    }
+  ]
+}
