@@ -43,10 +43,10 @@ Replace with the official registered business address before live campaigns.
 ## 🖼 Logo Assets
 
 - **White Background Logo (Dark Logo):**  
-  https://res.cloudinary.com/de9yuxu0i/image/upload/v1766515000/logo2_black_wuqqiu.svg
+  https://res.cloudinary.com/de9yuxu0i/image/upload/v1766775524/svgviewer-output_rhzuom.svg
 
 - **Dark Background Logo (Light Logo):**  
-  https://res.cloudinary.com/de9yuxu0i/image/upload/v1766515000/logo2_white_kewvm5.svg
+ https://res.cloudinary.com/de9yuxu0i/image/upload/v1766775743/svgviewer-output_2_pqsicx.svg
 
 ---
 
