@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulsar Email</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #e9f2f7;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      display: block;
+      border: 0;
+      max-width: 100% !important;
+      height: auto;
+    }
+
+    table {
+      border-collapse: collapse !important;
+      max-width: 600px;
+      width: 100% !important;
+    }
+
+    /* Wrapper */
+    .wrapper {
+      width: 100%;
+      padding: 50px 0;
+    }
+
+    .card {
+      width: 800px;
+      max-width: 95%;
+      background: #ffffff;
+      margin: auto;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.22);
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #082939, #0fb6bc 90%);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header img {
+      width: 180px;
+      filter: brightness(0) invert(1);
+    }
+
+    /* Content */
+    .content {
+      padding: 44px 40px;
+      font-size: 18px;
+      color: #1e3551;
+      line-height: 1.7;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 32px;
+      font-weight: 700;
+      color: #0b3c52;
+      line-height: 1.2;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 18px 42px;
+      font-size: 18px;
+      font-weight: 600;
+      background: #0fb6bc;
+      border-radius: 10px;
+      color: #ffffff !important;
+      text-decoration: none;
+      margin-top: 26px;
+    }
+
+    .divider {
+      margin: 46px 0 34px;
+      border-top: 1px solid #d3e4ea;
+    }
+
+    /* Footer */
+    .footer {
+      background: #ffffff;
+      font-size: 14px;
+      color: #6b7280;
+      text-align: center;
+      padding: 30px 14px 40px;
+    }
+
+    .footer a {
+      color: #0fb6bc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .unsubscribe a {
+      text-decoration: underline !important;
+    }
+
+    /* Mobile Enhancements */
+    @media only screen and (max-width: 620px) {
+      .content {
+        padding: 26px 18px !important;
+        font-size: 16px !important;
+      }
+
+      h1 {
+        font-size: 24px !important;
+      }
+
+      .cta {
+        display: block !important;
+        width: 100% !important;
+        padding: 16px 0 !important;
+        text-align: center !important;
+        font-size: 17px !important;
+      }
+
+      .header img {
+        width: 145px !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <table role="presentation" width="100%" class="wrapper">
+    <tr>
+      <td align="center">
+
+        <table class="card" role="presentation">
+
+          <!-- HEADER -->
+          <tr>
+            <td class="header">
+              <img
+                src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png"
+                alt="Pulsar Logo">
+            </td>
+          </tr>
+
+          <!-- CONTENT -->
+          <tr>
+            <td class="content">
+
+              <h1>End Front Desk Burnout—For Good</h1>
+
+              <p><strong>Front desk burnout is real—constant calls, reminders, billing, intake, follow-ups, and endless
+                  scheduling.</strong><br>
+                When the team is overwhelmed, the patient experience suffers.</p>
+
+              <p><strong>That’s why more offices are switching to Pulsar.</strong></p>
+
+              <p><strong>Pulsar reduces daily workload through:</strong></p>
+
+              <!-- Visual -->
+              <table role="presentation" style="margin:26px 0 34px;">
+                <tr>
+                  <td align="center">
+                    <img
+                      src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1765366611/_-_visual_selection_4_lghjxv.png"
+                      alt="Pulsar Automations">
+                  </td>
+                </tr>
+              </table>
+
+              <p>Your team gets more time, less pressure, and a clear, manageable workflow.<br>
+                <strong>Happier staff = better performance = better patient care.</strong>
+              </p>
+
+              <a class="cta" href="https://www.gopulsar.app/#bookdemo">Book a Demo</a>
+
+              <p style="margin-top:36px;">Warm regards,<br><strong>Team Pulsar</strong></p>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td class="footer">
+              <p><strong>Follow Us</strong></p>
+
+              <p>
+                <a href="https://www.instagram.com/go.pulsarapp/">Instagram</a> •
+                <a href="https://www.facebook.com/go.pulsarapp">Facebook</a> •
+                <a href="https://www.youtube.com/@go.pulsarapp">YouTube</a>
+              </p>
+
+              <p>Pulsar Technologies • San Francisco, CA</p>
+
+              <p class="unsubscribe">
+                <a href="{$unsubscribe_link}">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

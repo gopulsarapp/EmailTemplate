@@ -4,6 +4,11 @@
       "companyTitle": "Pulsar",
       "templates": [
         {
+          "name": "Template 1",
+          "file": "Pulsar/index1.html",
+          "category": "variation"
+        },
+        {
           "name": "Template 2",
           "file": "Pulsar/index2.html",
           "category": "variation"
@@ -22,38 +27,133 @@
           "name": "Template 5",
           "file": "Pulsar/index5.html",
           "category": "non-variation"
+        },
+        {
+          "name": "Template 6",
+          "file": "Pulsar/index6.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 7",
+          "file": "Pulsar/index7.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 8",
+          "file": "Pulsar/index8.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 9",
+          "file": "Pulsar/index9.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 10",
+          "file": "Pulsar/index10.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 11",
+          "file": "Pulsar/index11.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 12",
+          "file": "Pulsar/index12.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 13",
+          "file": "Pulsar/index13.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 14",
+          "file": "Pulsar/index14.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 15",
+          "file": "Pulsar/index15.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 16",
+          "file": "Pulsar/index16.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 17",
+          "file": "Pulsar/index17.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 18",
+          "file": "Pulsar/index18.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 19",
+          "file": "Pulsar/index19.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 20",
+          "file": "Pulsar/index20.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 21",
+          "file": "Pulsar/index21.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Template 22",
+          "file": "Pulsar/index22.html",
+          "category": "non-variation"
         }
       ]
     },
     {
       "companyTitle": "Instabuild",
       "templates": [
-        {
-          "name": "Product Update",
-          "file": "Instabuild/index2.html",
-          "category": "variation"
-        },
-        {
-          "name": "Marketing Blast",
-          "file": "Instabuild/index3.html",
-          "category": "variation"
-        },
-        {
-          "name": "Transactional Email",
-          "file": "Instabuild/index4.html",
-          "category": "variation"
-        },
-        {
-          "name": "System Notification",
-          "file": "Instabuild/index5.html",
-          "category": "non-variation"
-        },
-        {
-          "name": "Support Email",
-          "file": "Instabuild/index6.html",
-          "category": "non-variation"
-        }
-      ]
+    { "name": "Product Update", "file": "Instabuild/index1.html", "category": "variation" },
+    { "name": "Product Update", "file": "Instabuild/index2.html", "category": "variation" },
+    { "name": "Marketing Blast", "file": "Instabuild/index3.html", "category": "variation" },
+    { "name": "Transactional Email", "file": "Instabuild/index4.html", "category": "variation" },
+"templates": [
+    { "name": "Product Update", "file": "Instabuild/index1.html", "category": "variation" },
+    { "name": "Product Update", "file": "Instabuild/index2.html", "category": "variation" },
+    { "name": "Marketing Blast", "file": "Instabuild/index3.html", "category": "variation" },
+    { "name": "Transactional Email", "file": "Instabuild/index4.html", "category": "variation" },
+
+    { "name": "System Notification", "file": "Instabuild/index5.html", "category": "non-variation" },
+    { "name": "Support Email", "file": "Instabuild/index6.html", "category": "non-variation" },
+    { "name": "Account Alert", "file": "Instabuild/index7.html", "category": "non-variation" },
+    { "name": "Security Notice", "file": "Instabuild/index8.html", "category": "non-variation" },
+    { "name": "Maintenance Update", "file": "Instabuild/index9.html", "category": "non-variation" },
+    { "name": "Service Status", "file": "Instabuild/index10.html", "category": "non-variation" },
+
+    { "name": "Usage Summary", "file": "Instabuild/index11.html", "category": "non-variation" },
+    { "name": "Billing Notification", "file": "Instabuild/index12.html", "category": "non-variation" },
+    { "name": "Feature Announcement", "file": "Instabuild/index13.html", "category": "non-variation" },
+    { "name": "Policy Update", "file": "Instabuild/index14.html", "category": "non-variation" },
+    { "name": "Admin Communication", "file": "Instabuild/index15.html", "category": "non-variation" }
+  ]
+    { "name": "System Notification", "file": "Instabuild/index5.html", "category": "non-variation" },
+    { "name": "Support Email", "file": "Instabuild/index6.html", "category": "non-variation" },
+    { "name": "Account Alert", "file": "Instabuild/index7.html", "category": "non-variation" },
+    { "name": "Security Notice", "file": "Instabuild/index8.html", "category": "non-variation" },
+    { "name": "Maintenance Update", "file": "Instabuild/index9.html", "category": "non-variation" },
+    { "name": "Service Status", "file": "Instabuild/index10.html", "category": "non-variation" },
+
+    { "name": "Usage Summary", "file": "Instabuild/index11.html", "category": "non-variation" },
+    { "name": "Billing Notification", "file": "Instabuild/index12.html", "category": "non-variation" },
+    { "name": "Feature Announcement", "file": "Instabuild/index13.html", "category": "non-variation" },
+    { "name": "Policy Update", "file": "Instabuild/index14.html", "category": "non-variation" },
+    { "name": "Admin Communication", "file": "Instabuild/index15.html", "category": "non-variation" }
+  ]
     },
     {
       "companyTitle": "Novotek.ai",
@@ -99,13 +199,13 @@
           "name": "Automation Notice",
           "file": "MSG/index3.html",
           "category": "non-variation",
-            "image": "MSG/img/image3.png"
+          "image": "MSG/img/image3.png"
         },
         {
           "name": "Incident Report",
           "file": "MSG/index4.html",
           "category": "non-variation",
-            "image": "MSG/img/image4.png"
+          "image": "MSG/img/image4.png"
         },
         {
           "name": "Internal Update",
@@ -150,17 +250,192 @@
       "templates": [
         {
           "name": "Sustainability Update",
-          "file": "Ecofocus/index2.html",
+          "file": "Ecofocus/index1.html",
           "category": "variation"
         },
         {
           "name": "Compliance Alert",
-          "file": "Ecofocus/index3.html",
+          "file": "Ecofocus/index2.html",
           "category": "non-variation"
         },
         {
           "name": "Investor Communication",
+          "file": "Ecofocus/index3.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Policy Update",
           "file": "Ecofocus/index4.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Annual ESG Summary",
+          "file": "Ecofocus/index5.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Framework Alignment Notice",
+          "file": "Ecofocus/index6.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Stakeholder Update",
+          "file": "Ecofocus/index7.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Data Collection Reminder",
+          "file": "Ecofocus/index8.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Audit Readiness Update",
+          "file": "Ecofocus/index9.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Dashboard Launch",
+          "file": "Ecofocus/index10.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "University ESG Outreach",
+          "file": "Ecofocus/index11.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "College Sustainability Brief",
+          "file": "Ecofocus/index12.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Quebec ESG Compliance",
+          "file": "Ecofocus/index13.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Canada ESG Regulations",
+          "file": "Ecofocus/index14.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Automation Overview",
+          "file": "Ecofocus/index15.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Reporting Deadline Alert",
+          "file": "Ecofocus/index16.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "GRI Reporting Notice",
+          "file": "Ecofocus/index17.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "TCFD Alignment Update",
+          "file": "Ecofocus/index18.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "CSRD Readiness Guide",
+          "file": "Ecofocus/index19.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Sustainability Metrics Update",
+          "file": "Ecofocus/index20.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Performance Snapshot",
+          "file": "Ecofocus/index21.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Department ESG Coordination",
+          "file": "Ecofocus/index22.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Executive ESG Briefing",
+          "file": "Ecofocus/index23.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Board ESG Update",
+          "file": "Ecofocus/index24.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Sustainability Roadmap",
+          "file": "Ecofocus/index25.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Risk Assessment",
+          "file": "Ecofocus/index26.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Climate Impact Report",
+          "file": "Ecofocus/index27.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Social Impact Overview",
+          "file": "Ecofocus/index28.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Governance Update",
+          "file": "Ecofocus/index29.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Data Validation",
+          "file": "Ecofocus/index30.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Sustainability KPI Report",
+          "file": "Ecofocus/index31.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Operational ESG Update",
+          "file": "Ecofocus/index32.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Program Launch",
+          "file": "Ecofocus/index33.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Transformation Story",
+          "file": "Ecofocus/index34.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Institutional ESG Insights",
+          "file": "Ecofocus/index35.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Sustainability Leadership Note",
+          "file": "Ecofocus/index36.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "ESG Strategy Update",
+          "file": "Ecofocus/index37.html",
+          "category": "non-variation"
+        },
+        {
+          "name": "Future ESG Outlook",
+          "file": "Ecofocus/index38.html",
           "category": "non-variation"
         }
       ]

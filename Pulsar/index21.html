@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulsar Email</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #EEF2FF, #F3E8FF);
+      font-family: 'Roboto', Arial, sans-serif;
+      color: #1E1B4B;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 640px;
+      margin: 40px auto;
+      background: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(93, 63, 211, 0.12);
+      overflow: hidden;
+      border: 1px solid #E0E7FF;
+    }
+
+    .header {
+      background: linear-gradient(120deg, #4F46E5, #7C3AED);
+      padding: 36px 20px;
+      text-align: center;
+    }
+
+    .header img {
+      width: 170px;
+      filter: brightness(0) invert(1);
+    }
+
+    .content {
+      padding: 34px 32px;
+      font-size: 17px;
+      color: #312E81;
+    }
+
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 0;
+      color: #1E1B4B;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 15px 32px;
+      background: linear-gradient(135deg, #7C3AED, #4F46E5);
+      color: #ffffff !important;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 4px 10px rgba(124, 58, 237, 0.35);
+    }
+
+    .cta:hover {
+      opacity: 0.88;
+    }
+
+    img.main-img {
+      width: 100%;
+      max-width: 580px;
+      border-radius: 10px;
+      margin-top: 18px;
+      border: 1px solid #E9D5FF;
+    }
+
+    .divider {
+      border-top: 1px solid #E0E7FF;
+      margin: 36px 0;
+    }
+
+    a {
+      color: #6D28D9;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    .footer-wrapper {
+      text-align: center;
+      padding: 26px 0 14px;
+      font-size: 13px;
+      background: #FFFFFF;
+      color: #4B5563;
+    }
+
+    .footer-links a {
+      color: #7C3AED;
+      margin: 0 6px;
+      font-weight: 500;
+    }
+
+    .brand-text {
+      font-weight: 600;
+      color: #1E1B4B;
+    }
+
+    .unsubscribe a {
+      color: #7C3AED;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img
+        src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png"
+        alt="Pulsar Logo">
+    </div>
+
+    <div class="content">
+      <h1>Transform Your Dental Front Desk Experience</h1>
+
+      <p>Patients expect faster check-ins, real-time updates, and a seamless onboarding experience. But front desk teams
+        are often overwhelmed — causing delays, errors, and patient frustration.</p>
+
+      <p>With <strong>Pulsar</strong>, your front desk becomes an automated, intelligent communication hub.</p>
+
+      <img class="main-img" src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1765364511/11_skonwd.png" alt="">
+
+      <p><strong>Efficiency at the front desk fuels efficiency everywhere else in the practice.</strong> Pulsar aligns
+        your team, reduces workload, and creates delight at every touchpoint.</p>
+
+      <a href="https://www.gopulsar.app/#bookdemo" class="cta">Book a Demo</a>
+
+      <p style="margin-top: 26px;">Warm regards,<br><strong>Team Pulsar</strong></p>
+    </div>
+
+    <div class="footer-wrapper">
+      <p class="brand-text">Follow Us:</p>
+      <p class="footer-links">
+        <a href="https://www.instagram.com/go.pulsarapp/">Instagram</a> |
+        <a href="https://www.facebook.com/go.pulsarapp">Facebook</a> |
+        <a href="https://www.youtube.com/@go.pulsarapp">YouTube</a>
+      </p>
+
+      <p>© Pulsar • San Jose, CA • You are receiving this because you opted in.</p>
+
+      <p class="unsubscribe"> <a href="{$unsubscribe_link}">Unsubscribe</a></p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

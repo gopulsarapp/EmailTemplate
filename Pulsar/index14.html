@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Pulsar Email</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    background:#f4f8ff;
+    font-family:Arial, sans-serif;
+  }
+
+  img {
+    border:0;
+    display:block;
+    max-width:100% !important;
+    height:auto;
+  }
+
+  .wrapper {
+    width:100%;
+    table-layout:fixed;
+    background:#f4f8ff;
+    padding:40px 0;
+  }
+
+  .main {
+    background:#ffffff;
+    max-width:640px;
+    margin:0 auto;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(0,0,0,0.12);
+  }
+
+  .header {
+    background:#1E3A8A;
+    padding:34px 20px;
+    text-align:center;
+  }
+
+  .header img {
+    width:170px;
+    filter:brightness(0) invert(1);
+  }
+
+  .content {
+    padding:38px 32px;
+    color:#262654;
+    font-size:17px;
+    line-height:1.6;
+  }
+
+  h1 {
+    margin:0 0 16px 0;
+    font-size:28px;
+    font-weight:700;
+    color:#1E1B4B;
+  }
+
+  .cta {
+    display:inline-block;
+    margin-top:24px;
+    background:#447cc9;
+    padding:15px 32px;
+    color:#ffffff !important;
+    font-size:16px;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:6px;
+    box-shadow:0 3px 10px rgba(68,124,201,0.45);
+  }
+
+  .divider {
+    border-top:1px solid #e5e7eb;
+    margin:44px 0 32px;
+  }
+
+  .footer {
+    background:#ffffff;
+    text-align:center;
+    padding:24px 10px 28px;
+    color:#6b7280;
+    font-size:13px;
+  }
+
+  .footer a {
+    color:#447cc9;
+    text-decoration:none;
+    margin:0 6px;
+    font-weight:500;
+  }
+
+  .unsubscribe a {
+    color:#447cc9;
+    text-decoration:underline;
+  }
+
+  @media only screen and (max-width:620px) {
+    .content { padding:24px !important; font-size:16px !important; }
+    h1 { font-size:24px !important; }
+
+    .cta {
+      display:block !important;
+      width:100% !important;
+      text-align:center !important;
+      padding:16px 0 !important;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<table class="wrapper" role="presentation" width="100%">
+<tr>
+  <td align="center">
+
+    <table class="main" role="presentation" width="100%">
+      
+      <!-- HEADER -->
+      <tr>
+        <td class="header">
+          <img src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png" alt="Pulsar Logo">
+        </td>
+      </tr>
+
+      <!-- CONTENT -->
+      <tr>
+        <td class="content">
+          
+          <h1>Scale Without Losing Control</h1>
+
+          <p>Running a multi-location dental practice is challenging—multiple schedules, separate teams, different workflows, and endless coordination.</p>
+
+          <p><strong>Pulsar simplifies everything through a single, centralized dashboard:</strong></p>
+
+          <!-- FIXED IMAGE WRAP -->
+          <table role="presentation" width="100%" style="margin:16px 0;">
+            <tr>
+              <td align="center">
+                <img src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1765366287/_-_visual_selection_2_yzduiv.png" alt="Dashboard visualization">
+              </td>
+            </tr>
+          </table>
+
+          <p>Whether you have 2 clinics or 20, Pulsar brings every unit together with perfect consistency and flawless organization.</p>
+
+          <p>If you want clean, connected, scalable operations—<strong>Pulsar delivers exactly that</strong>.</p>
+
+          <a href="https://www.gopulsar.app/#bookdemo" class="cta">Book a Demo</a>
+
+          <p style="margin-top:30px;">Warm regards,<br><strong>Team Pulsar</strong></p>
+
+          <div class="divider"></div>
+
+        </td>
+      </tr>
+
+      <!-- FOOTER -->
+      <tr>
+        <td class="footer">
+          <p><strong>Follow Us</strong></p>
+          <p>
+            <a href="https://www.instagram.com/go.pulsarapp/">Instagram</a> |
+            <a href="https://www.facebook.com/go.pulsarapp">Facebook</a> |
+            <a href="https://www.youtube.com/@go.pulsarapp">YouTube</a>
+          </p>
+
+          <p>Pulsar Technologies • San Francisco, CA, USA</p>
+
+          <p class="unsubscribe">
+            <a href="{$unsubscribe_link}">Unsubscribe</a>
+          </p>
+        </td>
+      </tr>
+
+    </table>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Pulsar Email</title>
+
+<style>
+ body, table, td {margin:0; padding:0; font-family:'Segoe UI',Roboto,Arial,sans-serif;}
+  img {display:block; max-width:100% !important; height:auto !important;}
+
+  body {
+    background:linear-gradient(135deg,#e8f1ff,#d1ecff 70%);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrapper {
+    width:100%;
+    text-align:center;
+    padding:60px 0;
+  }
+
+  .card {
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    background:#ffffffee;
+    border-radius:22px;
+    box-shadow:0 18px 48px rgba(0,0,0,0.12);
+    overflow:hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background:linear-gradient(135deg,#0057ff,#00d1c3 90%);
+    padding:48px 24px;
+    text-align:center;
+  }
+
+  .header img {
+    width:200px !important;
+    filter:brightness(0) invert(1);
+    margin:auto;
+  }
+
+  /* CONTENT */
+  .content {
+    padding:50px 48px;
+    text-align:left;
+    font-size:18px;
+    line-height:1.7;
+    color:#1c2a39;
+  }
+
+  h1 {
+    font-size:34px;
+    margin:0 0 24px;
+    color:#0e326c;
+    font-weight:700;
+  }
+
+  .intro {
+    background:#eef6ff;
+    padding:16px 20px;
+    border-radius:12px;
+    border-left:4px solid #0057ff;
+    margin-bottom:24px;
+    font-weight:500;
+  }
+
+  /* CTA */
+/* CTA */
+.cta {
+  display:inline-block;
+  margin-top:34px;
+  padding:15px 0;
+  background:#0057ff;
+  color:#ffffff !important;
+  border-radius:12px;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:600;
+  text-align:center;
+  box-shadow:0 8px 24px rgba(0,87,255,0.35);
+  transition:.25s ease;
+  display: block;
+  width:100%;           /* FIXED: no forced full width */
+  
+}
+
+.cta:hover {
+  opacity:.92;
+  transform:translateY(-3px);
+}
+
+  .divider {
+    border-top:1px solid #dbe3ef;
+    margin:52px 0 40px;
+  }
+
+  /* FOOTER */
+  .footer {
+    background:#ffffff;
+    padding:34px 20px 44px;
+    color:#6b7280;
+    font-size:14px;
+    text-align:center;
+  }
+
+  .footer a {
+    color:#0057ff;
+    font-weight:600;
+    margin:0 6px;
+    text-decoration:none;
+  }
+
+  .unsubscribe a {text-decoration:underline;}
+
+  /* MOBILE */
+  @media(max-width:620px) {
+    .wrapper{
+      width: 100%;
+    }
+    .content{padding:32px !important; font-size:17px;}
+    h1{font-size:26px;}
+  
+      .cta {
+    width:100% !important;  /* Mobile full width */
+    display:block;
+  }
+  }
+</style>
+</head>
+
+<body>
+
+<table class="wrapper" width="100%" role="presentation">
+<tr><td>
+
+  <!-- CARD -->
+  <table class="card" role="presentation">
+
+    <!-- HEADER -->
+    <tr>
+      <td class="header">
+        <img src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png" alt="Pulsar Logo">
+      </td>
+    </tr>
+
+    <!-- CONTENT -->
+    <tr>
+      <td class="content">
+
+        <h1>Retention Drives Revenue</h1>
+
+        <div class="highlight-box">
+          Acquiring a new patient is expensive, but keeping an existing one is simple—when you have the right tools.
+        </div>
+
+       <img src="https://res.cloudinary.com/de9yuxu0i/image/upload/v1765368027/_-_visual_selection_8_j5gkja.png" alt="">
+
+        <p style="margin-top:24px;">
+          Retention directly impacts long-term revenue—and most practices don’t have the time to manage it manually.
+        </p>
+
+        <p><strong>Pulsar ensures your patients stay connected, informed, and engaged with your practice throughout the year.</strong></p>
+
+        <a href="https://www.gopulsar.app/#bookdemo" class="cta">Book a Demo</a>
+
+        <p style="margin-top:40px;">Warm regards,<br><strong>Team Pulsar</strong></p>
+
+        <div class="divider"></div>
+      </td>
+    </tr>
+
+    <!-- FOOTER -->
+    <tr>
+      <td class="footer">
+        <p><strong>Follow Us</strong></p>
+        <p>
+          <a href="https://www.instagram.com/go.pulsarapp/">Instagram</a> •
+          <a href="https://www.facebook.com/go.pulsarapp">Facebook</a> •
+          <a href="https://www.youtube.com/@go.pulsarapp">YouTube</a>
+        </p>
+        <p>Pulsar Technologies • San Francisco, CA</p>
+        <p class="unsubscribe"><a href="{$unsubscribe_link}">Unsubscribe</a></p>
+      </td>
+    </tr>
+
+  </table>
+  <!-- END CARD -->
+
+</td></tr>
+</table>
+
+</body>
+</html>
