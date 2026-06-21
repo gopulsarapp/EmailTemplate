@@ -3,351 +3,546 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>What Dental Teams Are Saying About Pulsar</title>
+<title>Managing Multiple Locations Doesn't Have To Be Hard</title>
 
 <style>
 body{
-    margin:0;
-    padding:0;
-    background:#F1F5F9;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+margin:0;
+padding:0;
+background:#020617;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
 table{
-    border-collapse:collapse;
-    border-spacing:0;
+border-spacing:0;
 }
 
 img{
-    border:0;
-    display:block;
-    max-width:100%;
+border:0;
+display:block;
+max-width:100%;
 }
 
-@media only screen and (max-width:600px){
+.wrapper{
+width:100%;
+background:#020617;
+padding:30px 10px;
+}
 
 .container{
-    width:100% !important;
+max-width:700px;
+margin:0 auto;
+background:#0F172A;
+border-radius:24px;
+overflow:hidden;
 }
 
-.hero-title{
-    font-size:28px !important;
-    line-height:36px !important;
+.hero{
+padding:60px 45px;
+background:linear-gradient(135deg,#020617,#0F172A);
+text-align:center;
 }
 
-.quote-text{
-    font-size:24px !important;
-    line-height:38px !important;
+.logo{
+width:190px;
+margin:0 auto 30px;
 }
 
+.hero-badge{
+display:inline-block;
+padding:8px 18px;
+background:rgba(63,188,176,.15);
+border:1px solid rgba(63,188,176,.35);
+color:#3FBCB0;
+border-radius:999px;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:24px;
+}
+
+.hero h1{
+margin:0;
+font-size:46px;
+line-height:56px;
+font-weight:700;
+color:#ffffff;
+}
+
+.hero p{
+margin:20px auto 0;
+max-width:560px;
+font-size:18px;
+line-height:30px;
+color:#94A3B8;
+}
+
+.practice-section{
+padding:50px 40px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 25px;
+}
+
+.practice-section h2{
+margin:0;
+color:#ffffff;
+font-size:30px;
+}
+
+.practice-section p{
+margin-top:15px;
+color:#94A3B8;
+line-height:28px;
+}
+
+.locations{
+padding:0 30px 50px;
+}
+
+.location-card{
+background:#111C2D;
+border:1px solid #1E293B;
+border-radius:18px;
+padding:28px;
+margin-bottom:18px;
+}
+
+.location-card h3{
+margin:0 0 12px;
+color:#3FBCB0;
+font-size:20px;
+}
+
+.location-card p{
+margin:0;
+color:#CBD5E1;
+line-height:26px;
+}
+
+.workflow{
+padding:0 30px 50px;
+}
+
+.workflow-box{
+background:#111C2D;
+border-radius:20px;
+padding:35px;
+text-align:center;
+}
+
+.workflow-box h2{
+margin:0 0 30px;
+color:#ffffff;
+}
+
+.flow{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.step{
+width:22%;
+background:#0F172A;
+border:1px solid #1E293B;
+border-radius:16px;
+padding:20px 10px;
+}
+
+.step-number{
+width:42px;
+height:42px;
+line-height:42px;
+border-radius:50%;
+background:#3FBCB0;
+color:#ffffff;
+font-weight:700;
+margin:0 auto 15px;
+}
+
+.step p{
+margin:0;
+font-size:13px;
+line-height:20px;
+color:#CBD5E1;
+}
+
+.arrow{
+width:4%;
+color:#3FBCB0;
+font-size:22px;
+font-weight:bold;
+}
+
+.benefits{
+padding:0 30px 50px;
+}
+
+.benefits h2{
+text-align:center;
+color:#ffffff;
+margin-bottom:25px;
+}
+
+.benefit-grid{
+width:100%;
+}
+
+.benefit{
+background:#111C2D;
+border-radius:18px;
+padding:25px;
+border:1px solid #1E293B;
+}
+
+.benefit h3{
+margin:0 0 12px;
+color:#ffffff;
+}
+
+.benefit p{
+margin:0;
+color:#94A3B8;
+line-height:24px;
+font-size:14px;
+}
+
+.testimonial{
+padding:0 30px 50px;
+}
+
+.quote{
+background:#3FBCB0;
+border-radius:20px;
+padding:40px;
+text-align:center;
+}
+
+.quote p{
+margin:0;
+font-size:24px;
+line-height:38px;
+color:#ffffff;
+font-style:italic;
+}
+
+.quote-author{
+margin-top:20px;
+font-size:15px;
+color:#E6FFFB;
+font-weight:600;
+}
+
+.cta{
+padding:0 30px 60px;
+text-align:center;
+}
+
+.cta-box{
+background:#ffffff;
+border-radius:24px;
+padding:45px;
+}
+
+.cta-box h2{
+margin:0 0 15px;
+font-size:34px;
+color:#020617;
+}
+
+.cta-box p{
+margin:0 0 30px;
+color:#64748B;
+line-height:28px;
+}
+
+.button{
+display:inline-block;
+background:#3FBCB0;
+color:#ffffff !important;
+text-decoration:none;
+padding:18px 40px;
+border-radius:12px;
+font-weight:700;
+font-size:16px;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+border-top:1px solid #1E293B;
+}
+
+.footer p{
+margin:0;
+color:#94A3B8;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:40px 25px;
+}
+
+.hero h1{
+font-size:32px;
+line-height:42px;
+}
+
+.practice-section{
+padding:40px 25px;
+}
+
+.locations,
+.workflow,
+.benefits,
+.testimonial,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.flow{
+display:block;
+}
+
+.step{
+width:100%;
+margin-bottom:15px;
+}
+
+.arrow{
+display:none;
+}
+
+.quote p{
+font-size:20px;
+line-height:32px;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
 }
 </style>
 </head>
+
 <body>
 
-<center>
+<center class="wrapper">
 
-<table width="100%" bgcolor="#F1F5F9" role="presentation">
+<table width="100%" cellpadding="0" cellspacing="0" class="container">
+
 <tr>
-<td align="center" style="padding:40px 15px;">
-
-<table width="600" bgcolor="#FFFFFF" class="container" role="presentation"
-style="max-width:600px;border-radius:14px;overflow:hidden;">
-
-<!-- TOP BAR -->
-<tr>
-<td bgcolor="#0F172A" align="center" style="padding:30px;">
+<td class="hero">
 
 <img
+class="logo"
 src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
-width="140"
 alt="Pulsar">
 
-</td>
-</tr>
+<div class="hero-badge">
+Multi-Location Success Story
+</div>
 
-<!-- HEADLINE -->
-<tr>
-<td align="center" style="padding:45px 35px 15px;">
+<h1>Managing Multiple Locations Doesn't Have To Be Hard</h1>
 
-<h1 class="hero-title"
-style="
-margin:0;
-font-size:38px;
-line-height:46px;
-font-weight:700;
-color:#020617;
-">
-
-What Dental Teams Are Saying About Pulsar
-
-</h1>
+<p>
+See how Growing Smiles leverages AI-powered front-office automation to support operations across multiple dental locations.
+</p>
 
 </td>
 </tr>
 
 <tr>
-<td align="center"
-style="
-padding:0 40px 35px;
-font-size:17px;
-line-height:28px;
-color:#64748B;
-">
-
-Real feedback from practices focused on improving efficiency, communication, and patient experience.
-
-</td>
-</tr>
-
-<!-- DOCTOR IMAGE -->
-<tr>
-<td align="center">
+<td class="practice-section">
 
 <img
-src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
-width="190"
-alt="Dr. Samita Gumber"
-style="
-width:190px;
-height:190px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #E2E8F0;
-object-position: center top;
-">
-
-</td>
-</tr>
-
-<!-- TESTIMONIAL -->
-<tr>
-<td style="padding:40px 30px;">
-
-<table width="100%" bgcolor="#F8FAFC"
-style="
-border-radius:14px;
-border:1px solid #E2E8F0;
-">
-
-<tr>
-<td align="center" style="padding:40px 30px;">
-
-<div
-style="
-font-size:60px;
-line-height:1;
-color:#3FBCB0;
-font-weight:bold;
-">
-
-“
-
-</div>
-
-<div
-class="quote-text"
-style="
-font-size:30px;
-line-height:46px;
-color:#020617;
-font-weight:500;
-padding-top:10px;
-">
-
-Managing our front desk became significantly easier after implementing Pulsar.
-
-</div>
-
-<div
-style="
-padding-top:24px;
-font-size:18px;
-line-height:32px;
-color:#475569;
-">
-
-Our team spends less time on repetitive administrative work and more time focusing on patients.
-
-</div>
-
-</td>
-</tr>
-
-</table>
-
-</td>
-</tr>
-
-<!-- PRACTICE INFO -->
-<tr>
-<td align="center" style="padding:0 30px 35px;">
-
-<img
+class="practice-logo"
 src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png"
-width="160"
-alt="The Growing Smiles">
+alt="Growing Smiles">
 
-<div
-style="
-padding-top:20px;
-font-size:22px;
-font-weight:700;
-color:#020617;
-">
+<h2>Growing Smiles</h2>
 
-Dr. Samita Gumber
+<p>
+A growing dental organization committed to exceptional patient experiences across Windsor and LaSalle.
+</p>
 
+</td>
+</tr>
+
+<tr>
+<td class="locations">
+
+<div class="location-card">
+<h3>Location 01</h3>
+<p>
+1400 Front Rd, LaSalle, ON N9J 2B3
+</p>
 </div>
 
-<div
-style="
-padding-top:6px;
-font-size:16px;
-color:#64748B;
-">
+<div class="location-card">
+<h3>Location 02</h3>
+<p>
+6925 Enterprise Way Unit 2, Windsor, ON N8T 3N6
+</p>
+</div>
 
-The Growing Smiles
+</td>
+</tr>
+
+<tr>
+<td class="workflow">
+
+<div class="workflow-box">
+
+<h2>How Pulsar Automates Daily Operations</h2>
+
+<div class="flow">
+
+<div class="step">
+<div class="step-number">1</div>
+<p>Patient Inquiry</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<p>AI Scheduling</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<p>Automated Follow-Ups</p>
+</div>
+
+<div class="arrow">→</div>
+
+<div class="step">
+<div class="step-number">4</div>
+<p>Office Efficiency</p>
+</div>
+
+</div>
 
 </div>
 
 </td>
 </tr>
 
-<!-- TRUST SECTION -->
 <tr>
-<td style="padding:0 30px 40px;">
+<td class="benefits">
 
-<table width="100%" bgcolor="#F8FAFC"
-style="
-border-radius:12px;
-">
+<h2>Why Multi-Location Practices Choose Pulsar</h2>
 
+<table width="100%">
 <tr>
-<td style="padding:25px;">
 
-<div
-style="
-font-size:22px;
-font-weight:700;
-color:#020617;
-padding-bottom:15px;
-">
-
-Built for Modern Dental Practices
-
-</div>
-
-<div
-style="
-font-size:16px;
-line-height:30px;
-color:#334155;
-">
-
-✓ Reduce front desk workload<br>
-✓ Improve patient communication<br>
-✓ Automate repetitive workflows<br>
-✓ Integrates with Open Dental<br>
-✓ Integrates with QuickBooks<br>
-✓ Supports VoIP systems
-
-</div>
-
+<td width="48%" class="benefit">
+<h3>Unified Operations</h3>
+<p>
+Manage workflows consistently across multiple locations.
+</p>
 </td>
-</tr>
 
+<td width="4%"></td>
+
+<td width="48%" class="benefit">
+<h3>AI Front Desk</h3>
+<p>
+Reduce repetitive tasks and improve operational efficiency.
+</p>
+</td>
+
+</tr>
 </table>
 
 </td>
 </tr>
 
-<!-- CTA -->
 <tr>
-<td align="center" style="padding:0 30px 50px;">
+<td class="testimonial">
 
-<table role="presentation">
+<div class="quote">
+
+<p>
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</p>
+
+<div class="quote-author">
+Dr. Samita Gumber • Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
 <tr>
-<td bgcolor="#3FBCB0"
-style="border-radius:8px;">
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>See How It Works</h2>
+
+<p>
+Discover how Pulsar can help your practice automate scheduling, patient communication, and front-office operations at scale.
+</p>
 
 <a
 href="https://www.gopulsar.app/#bookdemo"
-style="
-display:inline-block;
-padding:16px 34px;
-font-size:17px;
-font-weight:700;
-color:#FFFFFF;
-text-decoration:none;
-">
-
-Explore Pulsar
-
+class="button">
+See How It Works
 </a>
-
-</td>
-</tr>
-</table>
-
-</td>
-</tr>
-
-<!-- FOOTER -->
-<tr>
-<td bgcolor="#0F172A"
-align="center"
-style="padding:40px 30px;">
-
-<img
-src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
-width="140"
-alt="Pulsar">
-
-<div
-style="
-padding-top:20px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
-
-AI-Powered Dental Front Office Management
 
 </div>
 
-<div
-style="
-padding-top:15px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
+</td>
+</tr>
 
+<tr>
+<td class="footer">
+
+<p>
+Pulsar AI Dental Front Office Platform<br>
 3315 San Felipe Rd<br>
 +1 707-397-5158<br>
 support@gopulsar.app
+</p>
 
-</div>
+<br>
 
-<div
-style="
-padding-top:20px;
-font-size:13px;
-color:#94A3B8;
-">
+<p>
+Instagram • Facebook • YouTube
+</p>
 
-© 2026 Pulsar. All rights reserved.
+<br>
 
-</div>
-
-</td>
-</tr>
-
-</table>
+<p>
+Unsubscribe • Manage Preferences
+</p>
 
 </td>
 </tr>
+
 </table>
 
 </center>

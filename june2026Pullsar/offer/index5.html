@@ -4,340 +4,480 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trusted by Growing Dental Practices</title>
+<title>Dental Teams Are Choosing Smarter Front Desk Operations</title>
 
 <style>
 body{
-    margin:0;
-    padding:0;
-    background:#F1F5F9;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+margin:0;
+padding:0;
+background:#edf2f7;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
 table{
-    border-collapse:collapse;
-    border-spacing:0;
+border-spacing:0;
 }
 
 img{
-    border:0;
-    display:block;
-    max-width:100%;
+display:block;
+border:0;
+max-width:100%;
 }
 
-@media only screen and (max-width:600px){
+.wrapper{
+width:100%;
+padding:30px 10px;
+background:#edf2f7;
+}
 
 .container{
-    width:100% !important;
+max-width:700px;
+margin:0 auto;
+background:#ffffff;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(15,23,42,.08);
 }
 
-.hero-title{
-    font-size:30px !important;
-    line-height:38px !important;
+.header{
+padding:35px;
+text-align:center;
 }
 
-.mobile-padding{
-    padding-left:20px !important;
-    padding-right:20px !important;
+.logo{
+width:180px;
+margin:0 auto;
 }
 
-.stack{
-    display:block !important;
-    width:100% !important;
+.hero{
+padding:20px 45px 50px;
+text-align:center;
 }
 
+.hero-badge{
+display:inline-block;
+background:#E6FFFB;
+color:#0f766e;
+padding:8px 18px;
+border-radius:999px;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.hero h1{
+margin:0;
+font-size:46px;
+line-height:54px;
+color:#020617;
+font-weight:700;
+}
+
+.hero p{
+margin-top:18px;
+font-size:18px;
+line-height:30px;
+color:#64748B;
+}
+
+.trust-strip{
+background:#0F172A;
+padding:25px;
+text-align:center;
+}
+
+.trust-strip p{
+margin:0;
+color:#CBD5E1;
+font-size:15px;
+letter-spacing:.5px;
+}
+
+.customer{
+padding:50px 40px;
+}
+
+.customer-card{
+background:#F8FAFC;
+border-radius:24px;
+overflow:hidden;
+}
+
+.customer-top{
+padding:35px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 20px;
+}
+
+.customer-top h2{
+margin:0;
+font-size:30px;
+color:#020617;
+}
+
+.customer-top p{
+margin-top:12px;
+color:#64748B;
+line-height:28px;
+}
+
+.doctor-card{
+background:#ffffff;
+padding:30px;
+border-top:1px solid #e2e8f0;
+}
+
+.doctor-img{
+width:140px;
+height:140px;
+border-radius:50%;
+margin:0 auto 20px;
+object-fit:cover;
+object-position: center top;
+}
+
+.doctor-name{
+text-align:center;
+font-size:24px;
+font-weight:700;
+color:#020617;
+}
+
+.doctor-title{
+text-align:center;
+color:#64748B;
+margin-top:8px;
+}
+
+.testimonial{
+padding:50px 40px;
+}
+
+.testimonial-box{
+background:linear-gradient(135deg,#3FBCB0,#2aa399);
+padding:40px;
+border-radius:24px;
+text-align:center;
+}
+
+.testimonial-box p{
+margin:0;
+font-size:24px;
+line-height:40px;
+color:#ffffff;
+font-style:italic;
+}
+
+.testimonial-author{
+margin-top:25px;
+color:#E6FFFB;
+font-weight:600;
+}
+
+.benefits{
+padding:0 40px 50px;
+}
+
+.benefits h2{
+text-align:center;
+margin:0 0 30px;
+font-size:34px;
+color:#020617;
+}
+
+.grid{
+width:100%;
+}
+
+.card{
+background:#F8FAFC;
+border-radius:18px;
+padding:25px;
+border:1px solid #e2e8f0;
+}
+
+.card h3{
+margin:0 0 12px;
+color:#020617;
+font-size:20px;
+}
+
+.card p{
+margin:0;
+line-height:24px;
+color:#64748B;
+font-size:14px;
+}
+
+.social-proof{
+padding:0 40px 50px;
+}
+
+.social-box{
+background:#0F172A;
+padding:40px;
+border-radius:24px;
+text-align:center;
+}
+
+.social-box h2{
+margin:0 0 20px;
+color:#ffffff;
+}
+
+.social-box p{
+margin:0;
+color:#CBD5E1;
+line-height:30px;
+}
+
+.cta{
+padding:0 40px 60px;
+}
+
+.cta-box{
+background:#F8FAFC;
+padding:45px;
+border-radius:24px;
+text-align:center;
+}
+
+.cta-box h2{
+margin:0 0 15px;
+font-size:34px;
+color:#020617;
+}
+
+.cta-box p{
+margin:0 0 30px;
+line-height:28px;
+color:#64748B;
+}
+
+.button{
+display:inline-block;
+background:#3FBCB0;
+color:#ffffff !important;
+text-decoration:none;
+padding:18px 40px;
+border-radius:12px;
+font-weight:700;
+font-size:16px;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.footer p{
+margin:0;
+color:#CBD5E1;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:20px 25px 40px;
+}
+
+.hero h1{
+font-size:32px;
+line-height:42px;
+}
+
+.customer,
+.testimonial,
+.benefits,
+.social-proof,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.card{
+margin-bottom:15px;
+display:block;
+width:100% !important;
+}
+
+.testimonial-box p{
+font-size:20px;
+line-height:32px;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
 }
 </style>
-
 </head>
 
 <body>
 
-<center>
+<center class="wrapper">
 
-<table width="100%" bgcolor="#F1F5F9" role="presentation">
-<tr>
-<td align="center" style="padding:40px 15px;">
-
-<table width="600" class="container" bgcolor="#FFFFFF" role="presentation"
-style="
-max-width:600px;
-border-radius:14px;
-overflow:hidden;
-">
-
-<!-- HEADER -->
+<table width="100%" cellpadding="0" cellspacing="0" class="container">
 
 <tr>
-<td align="center" style="padding:35px 30px;">
+<td class="header">
 
 <img
+class="logo"
 src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png"
-width="140"
 alt="Pulsar">
 
 </td>
 </tr>
 
-<!-- HERO -->
-
 <tr>
-<td align="center"
-style="
-padding:10px 40px 20px;
-">
+<td class="hero">
 
-<h1 class="hero-title"
-style="
-margin:0;
-font-size:40px;
-line-height:48px;
-font-weight:700;
-color:#020617;
-">
+<div class="hero-badge">
+Customer Success Story
+</div>
 
-Trusted by Growing Dental Practices
+<h1>Dental Teams Are Choosing Smarter Front Desk Operations</h1>
 
-</h1>
+<p>
+Modern dental practices are turning to AI-powered automation to streamline scheduling, improve communication, and reduce front-desk workload.
+</p>
 
 </td>
 </tr>
 
 <tr>
-<td align="center"
-style="
-padding:0 40px 35px;
-font-size:17px;
-line-height:30px;
-color:#64748B;
-">
+<td class="trust-strip">
 
-See how practices are simplifying front-office operations, improving communication, and creating a better patient experience with Pulsar.
+<p>
+TRUSTED BY FORWARD-THINKING DENTAL PRACTICES • OPEN DENTAL USERS • MULTI-LOCATION TEAMS
+</p>
 
 </td>
 </tr>
 
-<!-- CUSTOMER FEATURE -->
-
 <tr>
-<td style="padding:0 30px 35px;">
+<td class="customer">
 
-<table width="100%" bgcolor="#F8FAFC"
-style="
-border-radius:12px;
-border:1px solid #E2E8F0;
-">
+<div class="customer-card">
 
-<tr>
-<td align="center" style="padding:35px;">
+<div class="customer-top">
 
 <img
-src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
-width="140"
-alt="Dr. Samita Gumber"
-style="
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-object-position: center top;
-">
-
-<div style="height:20px;"></div>
-
-<img
+class="practice-logo"
 src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png"
-width="170"
-alt="The Growing Smiles">
+alt="Growing Smiles">
 
-<div
-style="
-padding-top:20px;
-font-size:22px;
-font-weight:700;
-color:#020617;
-">
+<h2>Growing Smiles</h2>
 
+<p>
+A modern dental practice serving patients across Windsor and LaSalle while embracing innovative technology to improve efficiency and patient experiences.
+</p>
+
+</div>
+
+<div class="doctor-card">
+
+<img
+class="doctor-img"
+src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
+alt="Dr Samita Gumber">
+
+<div class="doctor-name">
 Dr. Samita Gumber
-
 </div>
 
-<div
-style="
-padding-top:6px;
-font-size:16px;
-color:#64748B;
-">
+<div class="doctor-title">
+Founder • Growing Smiles
+</div>
 
-The Growing Smiles
+</div>
 
 </div>
 
 </td>
 </tr>
 
-</table>
-
-</td>
-</tr>
-
-<!-- STORY -->
-
 <tr>
-<td class="mobile-padding"
-style="
-padding:0 40px 35px;
-">
+<td class="testimonial">
 
-<div
-style="
-font-size:28px;
-font-weight:700;
-color:#020617;
-padding-bottom:18px;
-">
+<div class="testimonial-box">
 
-A Practice Focused on Growth
+<p>
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</p>
 
-</div>
-
-<div
-style="
-font-size:16px;
-line-height:30px;
-color:#334155;
-">
-
-Like many busy dental offices, The Growing Smiles wanted to spend less time managing repetitive administrative tasks and more time supporting patients.
-
-<br><br>
-
-By incorporating Pulsar into their front-office workflow, the team gained a more streamlined process for communication, coordination, and day-to-day operations.
-
-<br><br>
-
-The result is a smoother experience for both staff and patients while maintaining the flexibility to grow.
-
-</div>
-
-</td>
-</tr>
-
-<!-- TRUST INDICATORS -->
-
-<tr>
-<td style="padding:0 30px 35px;">
-
-<table width="100%"
-bgcolor="#ECFEFF"
-style="
-border-radius:12px;
-border:1px solid #A5F3FC;
-">
-
-<tr>
-<td style="padding:30px;">
-
-<div
-style="
-font-size:24px;
-font-weight:700;
-color:#020617;
-padding-bottom:20px;
-">
-
-Built for Modern Dental Teams
-
-</div>
-
-<table width="100%" role="presentation">
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ Open Dental Integration
-</td>
-</tr>
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ QuickBooks Integration
-</td>
-</tr>
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ VoIP Integration
-</td>
-</tr>
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ AI Front Office Automation
-</td>
-</tr>
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ Improved Team Efficiency
-</td>
-</tr>
-
-<tr>
-<td style="padding:8px 0;font-size:17px;color:#334155;">
-✓ Better Patient Communication
-</td>
-</tr>
-
-</table>
-
-</td>
-</tr>
-
-</table>
-
-</td>
-</tr>
-
-<!-- QUOTE -->
-
-<tr>
-<td style="padding:0 30px 35px;">
-
-<table width="100%"
-bgcolor="#F8FAFC"
-style="
-border-left:5px solid #3FBCB0;
-border-radius:10px;
-">
-
-<tr>
-<td style="padding:25px;">
-
-<div
-style="
-font-size:20px;
-line-height:34px;
-font-style:italic;
-color:#0F172A;
-">
-
-“Managing our front desk became significantly easier after implementing Pulsar. Our team spends less time on repetitive administrative work and more time focusing on patients.”
-
-</div>
-
-<div
-style="
-padding-top:16px;
-font-size:15px;
-font-weight:700;
-color:#3FBCB0;
-">
-
+<div class="testimonial-author">
 — Dr. Samita Gumber
+</div>
 
 </div>
 
 </td>
+</tr>
+
+<tr>
+<td class="benefits">
+
+<h2>Why Practices Choose Pulsar</h2>
+
+<table width="100%" class="grid">
+
+<tr>
+
+<td width="48%" class="card">
+<h3>AI Front Desk</h3>
+<p>
+Automate repetitive administrative tasks and improve team productivity.
+</p>
+</td>
+
+<td width="4%"></td>
+
+<td width="48%" class="card">
+<h3>Open Dental Integration</h3>
+<p>
+Connect seamlessly with your existing dental workflow systems.
+</p>
+</td>
+
+</tr>
+
+<tr><td height="15"></td></tr>
+
+<tr>
+
+<td width="48%" class="card">
+<h3>Patient Communication</h3>
+<p>
+Automate reminders, scheduling interactions, and follow-up workflows.
+</p>
+</td>
+
+<td width="4%"></td>
+
+<td width="48%" class="card">
+<h3>Multi-Location Ready</h3>
+<p>
+Support growing dental organizations from a centralized platform.
+</p>
+</td>
+
 </tr>
 
 </table>
@@ -345,102 +485,76 @@ color:#3FBCB0;
 </td>
 </tr>
 
-<!-- CTA -->
+<tr>
+<td class="social-proof">
+
+<div class="social-box">
+
+<h2>Built For Modern Dental Practices</h2>
+
+<p>
+Whether you're managing a single office or multiple locations, Pulsar helps create a more efficient, responsive, and scalable front-office operation.
+</p>
+
+</div>
+
+</td>
+</tr>
 
 <tr>
-<td align="center"
-style="
-padding:0 30px 55px;
-">
+<td class="cta">
 
-<table role="presentation">
-<tr>
-<td
-bgcolor="#3FBCB0"
-style="
-border-radius:8px;
-">
+<div class="cta-box">
+
+<h2>Book Your Personalized Demo</h2>
+
+<p>
+See how Pulsar can automate front-office operations, improve patient communication, and support practice growth.
+</p>
 
 <a
 href="https://www.gopulsar.app/#bookdemo"
-style="
-display:inline-block;
-padding:16px 34px;
-font-size:17px;
-font-weight:700;
-color:#FFFFFF;
-text-decoration:none;
-">
-
-Join Practices Like The Growing Smiles
-
+class="button">
+Book Your Personalized Demo
 </a>
 
-</td>
-</tr>
-</table>
+</div>
 
 </td>
 </tr>
-
-<!-- FOOTER -->
 
 <tr>
-<td bgcolor="#0F172A"
-align="center"
-style="
-padding:40px 30px;
-">
+<td class="footer">
 
-<img
-src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
-width="140"
-alt="Pulsar">
-
-<div
-style="
-padding-top:20px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
-
-AI-Powered Dental Front Office Management
-
-</div>
-
-<div
-style="
-padding-top:15px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
-
+<p>
+Pulsar AI Dental Front Office Management Platform<br>
 3315 San Felipe Rd<br>
-+1 707-397-5158<br>
-support@gopulsar.app
+Phone: +1 707-397-5158<br>
+Email: support@gopulsar.app
+</p>
 
-</div>
+<br>
 
-<div
-style="
-padding-top:20px;
-font-size:13px;
-color:#94A3B8;
-">
+<p>
+Website: https://www.gopulsar.app/
+</p>
 
-© 2026 Pulsar. All rights reserved.
+<br>
 
-</div>
+<p>
+Instagram • Facebook • YouTube
+</p>
+
+<br>
+
+<p>
+You received this email because you requested information from Pulsar.<br>
+Unsubscribe • Manage Preferences
+</p>
 
 </td>
 </tr>
 
-</table>
-
-</td>
-</tr>
 </table>
 
 </center>

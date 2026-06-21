@@ -1,49 +1,270 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Why The Growing Smiles Chose Pulsar</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>What Changed After Growing Smiles Started Using Pulsar?</title>
 
 <style>
 body{
-    margin:0;
-    padding:0;
-    background:#F1F5F9;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+margin:0;
+padding:0;
+background:#eef4f7;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
 table{
-    border-collapse:collapse;
-    border-spacing:0;
+border-spacing:0;
 }
 
 img{
-    border:0;
-    display:block;
-    max-width:100%;
+display:block;
+border:0;
+max-width:100%;
 }
 
-@media only screen and (max-width:600px){
+.wrapper{
+width:100%;
+background:#eef4f7;
+padding:30px 10px;
+}
 
 .container{
-    width:100% !important;
+max-width:680px;
+margin:0 auto;
+background:#ffffff;
+border-radius:20px;
+overflow:hidden;
 }
 
-.stack{
-    display:block !important;
-    width:100% !important;
+.hero{
+background:linear-gradient(135deg,#3FBCB0,#1a7f76);
+padding:50px 40px;
+text-align:center;
 }
 
-.hero-title{
-    font-size:30px !important;
-    line-height:38px !important;
+.hero-logo{
+margin:0 auto 25px;
+width:180px;
 }
 
-.mobile-padding{
-    padding-left:20px !important;
-    padding-right:20px !important;
+.hero h1{
+margin:0;
+color:#ffffff;
+font-size:38px;
+line-height:46px;
+font-weight:700;
+}
+
+.hero p{
+margin-top:15px;
+color:#dff8f6;
+font-size:18px;
+line-height:28px;
+}
+
+.practice{
+padding:35px;
+text-align:center;
+background:#ffffff;
+}
+
+.practice img{
+margin:0 auto 15px;
+width:170px;
+}
+
+.practice h2{
+margin:0;
+color:#020617;
+font-size:26px;
+}
+
+.practice p{
+margin-top:10px;
+color:#64748B;
+line-height:26px;
+}
+
+.compare-section{
+padding:20px 25px 40px;
+}
+
+.compare-table{
+width:100%;
+}
+
+.compare-card{
+width:48%;
+vertical-align:top;
+border-radius:16px;
+padding:25px;
+}
+
+.before{
+background:#fff1f2;
+border:1px solid #fecdd3;
+}
+
+.after{
+background:#ecfdf5;
+border:1px solid #bbf7d0;
+}
+
+.compare-title{
+font-size:22px;
+font-weight:700;
+margin-bottom:20px;
+}
+
+.before .compare-title{
+color:#be123c;
+}
+
+.after .compare-title{
+color:#15803d;
+}
+
+.item{
+margin-bottom:14px;
+color:#475569;
+line-height:24px;
+}
+
+.metrics{
+padding:0 25px 40px;
+}
+
+.metric-box{
+background:#0F172A;
+border-radius:18px;
+padding:35px;
+text-align:center;
+}
+
+.metric-box h2{
+margin:0 0 25px;
+color:#ffffff;
+}
+
+.metric{
+display:inline-block;
+width:30%;
+color:#ffffff;
+}
+
+.metric h3{
+margin:0;
+font-size:34px;
+}
+
+.metric p{
+margin-top:8px;
+font-size:13px;
+color:#cbd5e1;
+}
+
+.testimonial{
+padding:0 25px 40px;
+}
+
+.quote{
+background:#F8FAFC;
+padding:35px;
+border-left:6px solid #3FBCB0;
+border-radius:16px;
+}
+
+.quote p{
+font-size:18px;
+line-height:30px;
+color:#334155;
+font-style:italic;
+margin:0;
+}
+
+.quote-author{
+margin-top:20px;
+font-weight:700;
+color:#020617;
+}
+
+.cta{
+padding:0 25px 50px;
+text-align:center;
+}
+
+.cta-box{
+background:#3FBCB0;
+padding:40px;
+border-radius:18px;
+}
+
+.cta-box h2{
+color:#ffffff;
+margin:0 0 15px;
+}
+
+.cta-box p{
+color:#e8fffd;
+margin:0 0 25px;
+line-height:26px;
+}
+
+.button{
+display:inline-block;
+background:#ffffff;
+color:#0F172A !important;
+padding:16px 32px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+}
+
+.footer{
+background:#f8fafc;
+padding:35px;
+text-align:center;
+}
+
+.footer p{
+color:#64748B;
+font-size:14px;
+line-height:24px;
+margin:0;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:35px 25px;
+}
+
+.hero h1{
+font-size:28px;
+line-height:36px;
+}
+
+.compare-card{
+display:block;
+width:100% !important;
+margin-bottom:20px;
+}
+
+.metric{
+display:block;
+width:100%;
+margin-bottom:25px;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
 }
 }
 </style>
@@ -51,167 +272,80 @@ img{
 
 <body>
 
-<center>
+<center class="wrapper">
 
-<table width="100%" bgcolor="#F1F5F9" role="presentation">
+<table width="100%" cellpadding="0" cellspacing="0" class="container">
+
 <tr>
-<td align="center" style="padding:40px 15px;">
-
-<table width="600" class="container" bgcolor="#FFFFFF" role="presentation" style="max-width:600px;border-radius:12px;overflow:hidden;">
-
-<!-- Logo -->
-<tr>
-<td align="center" style="padding:35px 20px;">
+<td class="hero">
 
 <img
-src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png"
-width="140"
+class="hero-logo"
+src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
 alt="Pulsar">
 
-</td>
-</tr>
+<h1>What Changed After Growing Smiles Started Using Pulsar?</h1>
 
-<!-- Hero -->
-<tr>
-<td bgcolor="#3FBCB0" style="padding:50px 40px;text-align:center;">
-
-<h1 class="hero-title"
-style="
-margin:0;
-font-size:38px;
-line-height:46px;
-font-weight:700;
-color:#FFFFFF;
-">
-
-Why The Growing Smiles Chose Pulsar
-
-</h1>
-
-<p
-style="
-margin:18px 0 0;
-font-size:17px;
-line-height:28px;
-color:#E2FDFB;
-">
-
-A practice story about simplifying front-office operations while creating a better patient experience.
-
+<p>
+A side-by-side look at how AI-powered front-office automation transformed daily operations.
 </p>
 
 </td>
 </tr>
 
-<!-- Doctor + Story -->
 <tr>
-<td style="padding:40px 30px;">
-
-<table width="100%" role="presentation">
-
-<tr>
-
-<td class="stack" width="180" valign="top" align="center">
-
-<img
-src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
-width="150"
-style="
-width:150px;
-object-position: center top;
-height:150px;
-border-radius:50%;
-object-fit:cover;
-"
-alt="Dr. Samita Gumber">
-
-</td>
-
-<td class="stack" valign="top"
-style="
-padding-left:25px;
-font-size:16px;
-line-height:30px;
-color:#334155;
-">
-
-Many dental practices face the same challenge:
-
-<br><br>
-
-• Constant patient calls
-
-<br>
-
-• Appointment coordination
-
-<br>
-
-• Repetitive administrative work
-
-<br>
-
-• Growing demands on front desk teams
-
-<br><br>
-
-The Growing Smiles wanted a more efficient way to manage day-to-day operations without adding complexity.
-
-<br><br>
-
-With Pulsar, their team gained a streamlined workflow supported by automation, improved communication, and better visibility into front-office activity.
-
-</td>
-
-</tr>
-
-</table>
-
-</td>
-</tr>
-
-<!-- Practice Card -->
-<tr>
-<td style="padding:0 30px 35px 30px;">
-
-<table width="100%" bgcolor="#F8FAFC"
-style="
-border-radius:12px;
-border:1px solid #E2E8F0;
-">
-
-<tr>
-<td align="center" style="padding:30px;">
+<td class="practice">
 
 <img
 src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png"
-width="150"
-alt="The Growing Smiles">
+alt="Growing Smiles">
 
-<div
-style="
-padding-top:18px;
-font-size:22px;
-font-weight:700;
-color:#020617;
-">
+<h2>Growing Smiles Dental</h2>
 
-The Growing Smiles
-
-</div>
-
-<div
-style="
-padding-top:8px;
-font-size:16px;
-color:#64748B;
-">
-
-Dr. Samita Gumber
-
-</div>
+<p>
+Serving patients across Windsor and LaSalle with a modern, technology-driven dental experience.
+</p>
 
 </td>
+</tr>
+
+<tr>
+<td class="compare-section">
+
+<table width="100%" class="compare-table">
+
+<tr>
+
+<td class="compare-card before">
+
+<div class="compare-title">
+Before Pulsar
+</div>
+
+<div class="item">❌ Manual appointment coordination</div>
+<div class="item">❌ Repetitive administrative tasks</div>
+<div class="item">❌ Front desk workload bottlenecks</div>
+<div class="item">❌ Time spent on routine patient communication</div>
+<div class="item">❌ Limited automation across systems</div>
+
+</td>
+
+<td width="4%"></td>
+
+<td class="compare-card after">
+
+<div class="compare-title">
+After Pulsar
+</div>
+
+<div class="item">✅ AI-powered front desk assistance</div>
+<div class="item">✅ Automated patient communication</div>
+<div class="item">✅ Streamlined scheduling workflows</div>
+<div class="item">✅ Better operational efficiency</div>
+<div class="item">✅ Connected software ecosystem</div>
+
+</td>
+
 </tr>
 
 </table>
@@ -219,89 +353,99 @@ Dr. Samita Gumber
 </td>
 </tr>
 
-<!-- CTA -->
 <tr>
-<td align="center" style="padding:0 30px 50px;">
+<td class="metrics">
 
-<table role="presentation">
+<div class="metric-box">
+
+<h2>Operational Improvements</h2>
+
+<div class="metric">
+<h3>24/7</h3>
+<p>AI Support</p>
+</div>
+
+<div class="metric">
+<h3>2</h3>
+<p>Locations Managed</p>
+</div>
+
+<div class="metric">
+<h3>Less</h3>
+<p>Manual Work</p>
+</div>
+
+</div>
+
+</td>
+</tr>
+
 <tr>
-<td bgcolor="#3FBCB0" style="border-radius:8px;">
+<td class="testimonial">
+
+<div class="quote">
+
+<p>
+"Pulsar has helped us simplify front-office processes, improve communication workflows, and create a more efficient experience for both staff and patients."
+</p>
+
+<div class="quote-author">
+— Dr. Samita Gumber, Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>See Pulsar In Action</h2>
+
+<p>
+Discover how AI can automate scheduling, patient communication, office workflows, and front-desk operations for your practice.
+</p>
 
 <a
 href="https://www.gopulsar.app/#bookdemo"
-style="
-display:inline-block;
-padding:16px 34px;
-font-size:17px;
-font-weight:700;
-color:#FFFFFF;
-text-decoration:none;
-">
-
+class="button">
 See Pulsar In Action
-
 </a>
 
-</td>
-</tr>
-</table>
+</div>
 
 </td>
 </tr>
 
-<!-- Footer -->
 <tr>
-<td bgcolor="#0F172A" align="center" style="padding:40px 30px;">
+<td class="footer">
 
-<img
-src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
-width="140"
-alt="Pulsar">
-
-<div
-style="
-padding-top:20px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
-
-AI-Powered Dental Front Office Management
-
-</div>
-
-<div
-style="
-padding-top:15px;
-font-size:14px;
-line-height:24px;
-color:#CBD5E1;
-">
-
+<p>
+Pulsar AI Dental Front Office Platform<br>
 3315 San Felipe Rd<br>
-+1 707-397-5158<br>
+Phone: +1 707-397-5158<br>
 support@gopulsar.app
+</p>
 
-</div>
+<br>
 
-<div
-style="
-padding-top:20px;
-font-size:13px;
-color:#94A3B8;
-">
+<p>
+https://www.gopulsar.app/
+</p>
 
-© 2026 Pulsar. All rights reserved.
+<br>
 
-</div>
-
-</td>
-</tr>
-
-</table>
+<p>
+You received this email because you requested information from Pulsar.<br>
+Unsubscribe • Manage Preferences
+</p>
 
 </td>
 </tr>
+
 </table>
 
 </center>
