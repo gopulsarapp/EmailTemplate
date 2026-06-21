@@ -130,10 +130,13 @@ img{
 .metric-row{
   display:flex;
   flex-wrap:wrap;
+  justify-content:space-between;
+  gap:16px;
 }
 
 .metric{
-  width:33.33%;
+  width:31%;
+  min-width:160px;
   text-align:center;
 }
 
@@ -200,10 +203,28 @@ img{
   text-decoration:none;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
+
+.wrapper,
+.main{
+  width:100% !important;
+  min-width:0 !important;
+}
+
+.hero,
+.doctor-section,
+.story,
+.results,
+.benefits,
+.cta,
+.footer{
+  padding-left:20px !important;
+  padding-right:20px !important;
+}
 
 .hero{
-  padding:20px;
+  padding-top:20px;
+  padding-bottom:30px;
 }
 
 .hero h1{
@@ -211,27 +232,38 @@ img{
   line-height:36px;
 }
 
-.doctor-section,
-.story{
-  padding:0 20px 30px;
+.doctor-card{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
-.results,
-.benefits{
-  padding:0 20px 30px;
+.doctor-content{
+  padding:20px;
+}
+
+.metric-row{
+  flex-direction:column;
+  gap:16px;
 }
 
 .metric{
   width:100%;
-  margin-bottom:25px;
+  margin-bottom:0;
+}
+
+.benefit-card{
+  padding:20px;
 }
 
 .cta{
-  padding:20px;
+  padding-top:20px;
+  padding-bottom:40px;
 }
 
 .button{
   width:100%;
+  box-sizing:border-box;
 }
 }
 </style>

@@ -236,13 +236,36 @@ margin:0;
 
 @media screen and (max-width:600px){
 
+.wrapper,
+.container{
+width:100% !important;
+min-width:0 !important;
+}
+
 .hero{
-padding:35px 25px;
+padding:35px 20px;
 }
 
 .hero h1{
 font-size:28px;
 line-height:36px;
+}
+
+.compare-section,
+.metrics,
+.testimonial,
+.cta{
+padding:0 20px 40px;
+}
+
+.compare-table,
+.compare-table td{
+display:block !important;
+width:100% !important;
+}
+
+.spacer{
+display:none !important;
 }
 
 .compare-card{
@@ -330,7 +353,7 @@ Before Pulsar
 
 </td>
 
-<td width="4%"></td>
+<td class="spacer" width="4%"></td>
 
 <td class="compare-card after">
 

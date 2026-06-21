@@ -235,8 +235,14 @@ margin:0;
 
 @media screen and (max-width:600px){
 
+.wrapper,
+.container{
+width:100% !important;
+min-width:0 !important;
+}
+
 .hero{
-padding:30px 25px;
+padding:30px 20px;
 }
 
 .hero h1{
@@ -244,14 +250,29 @@ font-size:32px;
 line-height:40px;
 }
 
+.header,
+.hero,
+.quote-section,
+.story,
+.practice,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
 .story{
-padding:40px 25px;
+padding:40px 20px;
+}
+
+.story-grid,
+.story-left,
+.story-right{
+display:block !important;
+width:100% !important;
 }
 
 .story-left,
 .story-right{
-display:block;
-width:100%;
 padding:0;
 }
 
@@ -260,7 +281,7 @@ margin-top:20px;
 }
 
 .quote-section{
-padding:40px 25px;
+padding:40px 20px;
 }
 
 .quote-text{
@@ -269,11 +290,11 @@ line-height:34px;
 }
 
 .practice{
-padding:0 25px 40px;
+padding:0 20px 40px;
 }
 
 .cta{
-padding:0 25px 50px;
+padding:0 20px 50px;
 }
 
 .button{
