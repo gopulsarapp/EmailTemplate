@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patients Expect Amazon-Level Responses</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#F1F5F9;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+img{
+max-width:100%;
+display:block;
+border:0;
+}
+
+table{
+border-spacing:0;
+}
+
+.wrapper{
+width:100%;
+padding:30px 10px;
+background:#F1F5F9;
+}
+
+.container{
+max-width:700px;
+margin:0 auto;
+background:#FFFFFF;
+border-radius:24px;
+overflow:hidden;
+}
+
+.hero{
+padding:70px 40px;
+text-align:center;
+background:linear-gradient(135deg,#020617,#0F172A);
+}
+
+.logo{
+width:180px;
+margin:0 auto 25px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:999px;
+background:rgba(63,188,176,.15);
+border:1px solid rgba(63,188,176,.3);
+color:#3FBCB0;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:24px;
+}
+
+.hero h1{
+font-size:48px;
+line-height:58px;
+color:#FFFFFF;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:30px;
+color:#CBD5E1;
+max-width:560px;
+margin:0 auto;
+}
+
+.expectation{
+padding:50px 40px;
+}
+
+.expectation h2{
+text-align:center;
+font-size:34px;
+color:#020617;
+margin-bottom:30px;
+}
+
+.compare{
+display:flex;
+gap:20px;
+}
+
+.card{
+flex:1;
+padding:25px;
+border-radius:20px;
+}
+
+.old{
+background:#FEF2F2;
+border:1px solid #FECACA;
+}
+
+.new{
+background:#ECFDF5;
+border:1px solid #BBF7D0;
+}
+
+.card h3{
+margin-bottom:15px;
+font-size:22px;
+}
+
+.old h3{
+color:#991B1B;
+}
+
+.new h3{
+color:#166534;
+}
+
+.card ul{
+padding-left:18px;
+}
+
+.card li{
+margin-bottom:12px;
+line-height:24px;
+color:#475569;
+}
+
+.story{
+padding:0 40px 50px;
+}
+
+.story-box{
+background:#F8FAFC;
+border-radius:24px;
+padding:40px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 20px;
+}
+
+.story-box h2{
+color:#020617;
+margin-bottom:15px;
+}
+
+.story-box p{
+color:#64748B;
+line-height:28px;
+}
+
+.doctor{
+padding:0 40px 50px;
+}
+
+.doctor-card{
+background:#FFFFFF;
+border:1px solid #E2E8F0;
+border-radius:24px;
+padding:35px;
+text-align:center;
+}
+
+.doctor-img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin:0 auto 20px;
+object-position: center top;
+}
+
+.quote{
+font-size:22px;
+line-height:36px;
+color:#334155;
+font-style:italic;
+margin-top:20px;
+}
+
+.name{
+margin-top:15px;
+font-weight:700;
+color:#020617;
+}
+
+.features{
+padding:0 40px 50px;
+}
+
+.features h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+}
+
+.feature{
+background:#F8FAFC;
+padding:25px;
+border-radius:18px;
+margin-bottom:15px;
+border-left:4px solid #3FBCB0;
+}
+
+.feature h3{
+margin-bottom:10px;
+color:#020617;
+}
+
+.feature p{
+color:#64748B;
+line-height:24px;
+}
+
+.stats{
+padding:0 40px 50px;
+}
+
+.stats-box{
+background:#3FBCB0;
+border-radius:24px;
+padding:40px;
+text-align:center;
+}
+
+.stats-box h2{
+color:#FFFFFF;
+margin-bottom:25px;
+}
+
+.stat{
+display:inline-block;
+width:30%;
+color:#FFFFFF;
+}
+
+.stat h3{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.stat p{
+font-size:14px;
+}
+
+.cta{
+padding:0 40px 60px;
+}
+
+.cta-box{
+background:#020617;
+border-radius:24px;
+padding:50px;
+text-align:center;
+}
+
+.cta-box h2{
+color:#FFFFFF;
+margin-bottom:15px;
+}
+
+.cta-box p{
+color:#CBD5E1;
+line-height:28px;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:18px 40px;
+background:#3FBCB0;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+color:#FFFFFF !important;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.footer p{
+color:#CBD5E1;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:45px 25px;
+}
+
+.hero h1{
+font-size:34px;
+line-height:44px;
+}
+
+.expectation,
+.story,
+.doctor,
+.features,
+.stats,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.compare{
+display:block;
+}
+
+.card{
+margin-bottom:15px;
+}
+
+.stat{
+display:block;
+width:100%;
+margin-bottom:25px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<center class="wrapper">
+
+<table width="100%" class="container">
+
+<tr>
+<td class="hero">
+
+<img
+class="logo"
+src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png"
+alt="Pulsar">
+
+<div class="badge">
+Patient Experience
+</div>
+
+<h1>
+Patients Expect Amazon-Level Responses
+</h1>
+
+<p>
+Today's patients expect fast answers, instant communication, and seamless scheduling experiences.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td class="expectation">
+
+<h2>Patient Expectations Have Changed</h2>
+
+<div class="compare">
+
+<div class="card old">
+
+<h3>Yesterday</h3>
+
+<ul>
+<li>Wait for office hours</li>
+<li>Leave a voicemail</li>
+<li>Call back later</li>
+<li>Limited communication options</li>
+</ul>
+
+</div>
+
+<div class="card new">
+
+<h3>Today</h3>
+
+<ul>
+<li>Immediate responses</li>
+<li>24/7 availability</li>
+<li>Fast scheduling</li>
+<li>Digital-first experiences</li>
+</ul>
+
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="story">
+
+<div class="story-box">
+
+<img
+class="practice-logo"
+src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png"
+alt="Growing Smiles">
+
+<h2>How Growing Smiles Improved Patient Communication</h2>
+
+<p>
+Growing Smiles adopted Pulsar to streamline front-office communication workflows and create a more responsive experience for patients across multiple locations.
+</p>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="doctor">
+
+<div class="doctor-card">
+
+<img
+class="doctor-img"
+src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
+alt="Dr Samita Gumber">
+
+<div class="quote">
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</div>
+
+<div class="name">
+Dr. Samita Gumber • Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="features">
+
+<h2>Why Patients Notice The Difference</h2>
+
+<div class="feature">
+<h3>Faster Responses</h3>
+<p>
+Reduce waiting time and improve patient satisfaction.
+</p>
+</div>
+
+<div class="feature">
+<h3>Automated Scheduling</h3>
+<p>
+Help patients find appointments more efficiently.
+</p>
+</div>
+
+<div class="feature">
+<h3>Consistent Communication</h3>
+<p>
+Deliver a better experience before, during, and after appointments.
+</p>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="stats">
+
+<div class="stats-box">
+
+<h2>The Modern Patient Experience</h2>
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Availability</p>
+</div>
+
+<div class="stat">
+<h3>Fast</h3>
+<p>Responses</p>
+</div>
+
+<div class="stat">
+<h3>Better</h3>
+<p>Communication</p>
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>Deliver The Experience Patients Expect</h2>
+
+<p>
+See how Pulsar helps dental teams provide faster communication and more efficient front-office operations.
+</p>
+
+<a
+href="https://www.gopulsar.app/#bookdemo"
+class="button">
+Book Your Demo
+</a>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="footer">
+
+<p>
+Pulsar AI Dental Front Office Platform<br>
+3315 San Felipe Rd<br>
++1 707-397-5158<br>
+support@gopulsar.app
+</p>
+
+<br>
+
+<p>
+Unsubscribe • Manage Preferences
+</p>
+
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>

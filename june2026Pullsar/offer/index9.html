@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Open Dental Is Powerful. Pulsar Makes It Smarter.</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f8fafc;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+table{
+border-spacing:0;
+}
+
+img{
+display:block;
+max-width:100%;
+border:0;
+}
+
+.wrapper{
+width:100%;
+padding:30px 10px;
+background:#f8fafc;
+}
+
+.container{
+max-width:700px;
+margin:0 auto;
+background:#ffffff;
+border-radius:24px;
+overflow:hidden;
+box-shadow:0 10px 40px rgba(15,23,42,.08);
+}
+
+.hero{
+background:#0F172A;
+padding:60px 40px;
+text-align:center;
+}
+
+.logo{
+width:180px;
+margin:0 auto 25px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+background:rgba(63,188,176,.15);
+border:1px solid rgba(63,188,176,.3);
+border-radius:999px;
+color:#3FBCB0;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:44px;
+line-height:54px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:30px;
+color:#CBD5E1;
+}
+
+.dashboard{
+padding:50px 40px;
+}
+
+.dashboard-card{
+background:#F8FAFC;
+border:1px solid #E2E8F0;
+border-radius:20px;
+padding:30px;
+}
+
+.dashboard-header{
+font-size:18px;
+font-weight:700;
+color:#020617;
+margin-bottom:20px;
+}
+
+.stat-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:15px;
+}
+
+.stat{
+width:31%;
+background:#ffffff;
+border:1px solid #E2E8F0;
+padding:20px;
+border-radius:14px;
+text-align:center;
+}
+
+.stat h3{
+font-size:28px;
+color:#3FBCB0;
+margin-bottom:8px;
+}
+
+.stat p{
+font-size:13px;
+color:#64748B;
+}
+
+.integration{
+padding:0 40px 50px;
+}
+
+.integration h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+font-size:32px;
+}
+
+.flow{
+background:#0F172A;
+border-radius:20px;
+padding:35px;
+text-align:center;
+}
+
+.flow-step{
+display:inline-block;
+background:#111C2D;
+color:#ffffff;
+padding:15px 20px;
+border-radius:12px;
+margin:5px;
+font-size:14px;
+}
+
+.arrow{
+display:inline-block;
+color:#3FBCB0;
+font-size:20px;
+padding:0 5px;
+}
+
+.social-proof{
+padding:0 40px 50px;
+}
+
+.proof{
+background:#F8FAFC;
+border-radius:20px;
+padding:35px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 20px;
+}
+
+.proof h2{
+margin-bottom:15px;
+color:#020617;
+}
+
+.proof p{
+line-height:28px;
+color:#64748B;
+}
+
+.comparison{
+padding:0 40px 50px;
+}
+
+.compare-box{
+background:#ffffff;
+border:1px solid #E2E8F0;
+border-radius:20px;
+overflow:hidden;
+}
+
+.row{
+display:flex;
+}
+
+.cell{
+width:50%;
+padding:20px;
+}
+
+.left{
+background:#F8FAFC;
+font-weight:700;
+color:#020617;
+}
+
+.right{
+background:#ffffff;
+color:#64748B;
+}
+
+.quote{
+padding:0 40px 50px;
+}
+
+.quote-box{
+background:#3FBCB0;
+padding:40px;
+border-radius:24px;
+text-align:center;
+}
+
+.quote-box p{
+font-size:24px;
+line-height:38px;
+color:#ffffff;
+font-style:italic;
+}
+
+.author{
+margin-top:20px;
+color:#E6FFFB;
+font-weight:600;
+}
+
+.cta{
+padding:0 40px 60px;
+}
+
+.cta-box{
+background:#0F172A;
+padding:45px;
+border-radius:24px;
+text-align:center;
+}
+
+.cta-box h2{
+color:#ffffff;
+margin-bottom:15px;
+}
+
+.cta-box p{
+color:#CBD5E1;
+line-height:28px;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+background:#3FBCB0;
+padding:18px 40px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+color:#ffffff !important;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.footer p{
+color:#CBD5E1;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:40px 25px;
+}
+
+.hero h1{
+font-size:32px;
+line-height:42px;
+}
+
+.dashboard,
+.integration,
+.social-proof,
+.comparison,
+.quote,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.stat-row,
+.row{
+display:block;
+}
+
+.stat,
+.cell{
+width:100%;
+margin-bottom:10px;
+}
+
+.flow-step{
+display:block;
+margin-bottom:10px;
+}
+
+.arrow{
+display:none;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
+}
+</style>
+</head>
+
+<body>
+
+<center class="wrapper">
+
+<table width="100%" class="container">
+
+<tr>
+<td class="hero">
+
+<img
+class="logo"
+src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png">
+
+<div class="badge">
+Open Dental Power Users
+</div>
+
+<h1>
+Open Dental Is Powerful. Pulsar Makes It Smarter.
+</h1>
+
+<p>
+Don't replace your existing systems. Extend them with AI-powered automation and workflow intelligence.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td class="dashboard">
+
+<div class="dashboard-card">
+
+<div class="dashboard-header">
+Front Office Visibility Dashboard
+</div>
+
+<div class="stat-row">
+
+<div class="stat">
+<h3>24/7</h3>
+<p>Patient Support</p>
+</div>
+
+<div class="stat">
+<h3>AI</h3>
+<p>Scheduling Workflows</p>
+</div>
+
+<div class="stat">
+<h3>Less</h3>
+<p>Manual Admin Work</p>
+</div>
+
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="integration">
+
+<h2>How Pulsar Works With Open Dental</h2>
+
+<div class="flow">
+
+<div class="flow-step">Patient Request</div>
+<span class="arrow">→</span>
+
+<div class="flow-step">Pulsar AI</div>
+<span class="arrow">→</span>
+
+<div class="flow-step">Open Dental</div>
+<span class="arrow">→</span>
+
+<div class="flow-step">Automated Workflow</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="social-proof">
+
+<div class="proof">
+
+<img
+class="practice-logo"
+src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png">
+
+<h2>Growing Smiles Enhanced Existing Workflows</h2>
+
+<p>
+Instead of changing systems, Growing Smiles used Pulsar to improve communication workflows, automate repetitive tasks, and create a more efficient front-office experience.
+</p>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="comparison">
+
+<div class="compare-box">
+
+<div class="row">
+<div class="cell left">Open Dental</div>
+<div class="cell right">Practice Management System</div>
+</div>
+
+<div class="row">
+<div class="cell left">Pulsar</div>
+<div class="cell right">AI Front Office Automation</div>
+</div>
+
+<div class="row">
+<div class="cell left">Together</div>
+<div class="cell right">Connected Intelligent Workflow</div>
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="quote">
+
+<div class="quote-box">
+
+<p>
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</p>
+
+<div class="author">
+Dr. Samita Gumber • Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>See Pulsar Working Alongside Open Dental</h2>
+
+<p>
+Discover how AI automation can help your practice get more value from the systems you already use.
+</p>
+
+<a
+href="https://www.gopulsar.app/#bookdemo"
+class="button">
+Schedule A Demo
+</a>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="footer">
+
+<p>
+Pulsar AI Dental Front Office Platform<br>
+3315 San Felipe Rd<br>
++1 707-397-5158<br>
+support@gopulsar.app
+</p>
+
+<br>
+
+<p>
+Unsubscribe • Manage Preferences
+</p>
+
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>

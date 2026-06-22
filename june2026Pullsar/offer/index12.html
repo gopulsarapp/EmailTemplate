@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Meet The Employee Who Never Sleeps</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#F4F7FB;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+table{
+border-spacing:0;
+}
+
+img{
+display:block;
+max-width:100%;
+border:0;
+}
+
+.wrapper{
+width:100%;
+padding:30px 10px;
+background:#F4F7FB;
+}
+
+.container{
+max-width:700px;
+margin:0 auto;
+background:#FFFFFF;
+border-radius:24px;
+overflow:hidden;
+}
+
+.hero{
+background:linear-gradient(135deg,#3FBCB0,#0F172A);
+padding:70px 40px;
+text-align:center;
+}
+
+.logo{
+width:180px;
+margin:0 auto 25px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:999px;
+background:rgba(255,255,255,.15);
+border:1px solid rgba(255,255,255,.3);
+color:#ffffff;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:48px;
+line-height:58px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:30px;
+color:#E2E8F0;
+max-width:550px;
+margin:0 auto;
+}
+
+.employee{
+padding:50px 40px;
+}
+
+.employee-card{
+background:#F8FAFC;
+border:1px solid #E2E8F0;
+border-radius:24px;
+padding:35px;
+text-align:center;
+}
+
+.avatar{
+width:120px;
+height:120px;
+border-radius:50%;
+background:#3FBCB0;
+color:#ffffff;
+font-size:42px;
+font-weight:700;
+line-height:120px;
+margin:0 auto 20px;
+}
+
+.employee-name{
+font-size:30px;
+font-weight:700;
+color:#020617;
+}
+
+.employee-role{
+color:#64748B;
+margin-top:8px;
+margin-bottom:25px;
+}
+
+.profile-row{
+padding:12px 0;
+border-top:1px solid #E2E8F0;
+color:#475569;
+}
+
+.profile-row strong{
+color:#020617;
+}
+
+.compare{
+padding:0 40px 50px;
+}
+
+.compare h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+}
+
+.compare-grid{
+display:flex;
+gap:20px;
+}
+
+.before,
+.after{
+flex:1;
+padding:25px;
+border-radius:20px;
+}
+
+.before{
+background:#FEF2F2;
+border:1px solid #FECACA;
+}
+
+.after{
+background:#ECFDF5;
+border:1px solid #BBF7D0;
+}
+
+.before h3{
+color:#991B1B;
+margin-bottom:15px;
+}
+
+.after h3{
+color:#166534;
+margin-bottom:15px;
+}
+
+.before li,
+.after li{
+margin-bottom:10px;
+line-height:24px;
+color:#475569;
+}
+
+.social-proof{
+padding:0 40px 50px;
+}
+
+.proof-box{
+background:#0F172A;
+border-radius:24px;
+padding:40px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 20px;
+}
+
+.proof-box h2{
+color:#ffffff;
+margin-bottom:15px;
+}
+
+.proof-box p{
+color:#CBD5E1;
+line-height:28px;
+}
+
+.quote{
+padding:0 40px 50px;
+}
+
+.quote-box{
+background:#3FBCB0;
+padding:40px;
+border-radius:24px;
+text-align:center;
+}
+
+.quote-box p{
+font-size:24px;
+line-height:38px;
+color:#ffffff;
+font-style:italic;
+}
+
+.author{
+margin-top:20px;
+color:#E6FFFB;
+font-weight:600;
+}
+
+.skills{
+padding:0 40px 50px;
+}
+
+.skills h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+}
+
+.skill{
+background:#F8FAFC;
+padding:22px;
+border-radius:18px;
+margin-bottom:15px;
+}
+
+.skill h3{
+margin-bottom:10px;
+color:#020617;
+}
+
+.skill p{
+color:#64748B;
+line-height:24px;
+}
+
+.cta{
+padding:0 40px 60px;
+}
+
+.cta-box{
+background:#020617;
+padding:50px;
+border-radius:24px;
+text-align:center;
+}
+
+.cta-box h2{
+color:#ffffff;
+margin-bottom:15px;
+}
+
+.cta-box p{
+color:#CBD5E1;
+line-height:28px;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:18px 40px;
+background:#3FBCB0;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+color:#ffffff !important;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.footer p{
+color:#CBD5E1;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:45px 25px;
+}
+
+.hero h1{
+font-size:34px;
+line-height:44px;
+}
+
+.employee,
+.compare,
+.social-proof,
+.quote,
+.skills,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.compare-grid{
+display:block;
+}
+
+.before{
+margin-bottom:15px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<center class="wrapper">
+
+<table width="100%" class="container">
+
+<tr>
+<td class="hero">
+
+<img class="logo"
+src="https://images.ctfassets.net/mc1xdogpqbyd/48uRNbN1m8PdbVtDn1wIHd/4814894dea5c58ca472df773eb83c7a6/default-monochrome-white.png">
+
+<div class="badge">
+AI Receptionist
+</div>
+
+<h1>
+Meet The Employee Who Never Sleeps
+</h1>
+
+<p>
+Introducing the AI-powered front desk assistant that works 24/7, never misses a call, and helps your team focus on patients.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td class="employee">
+
+<div class="employee-card">
+
+<div class="avatar">AI</div>
+
+<div class="employee-name">
+Pulsar Assistant
+</div>
+
+<div class="employee-role">
+Virtual Front Desk Specialist
+</div>
+
+<div class="profile-row">
+<strong>Availability:</strong> 24/7
+</div>
+
+<div class="profile-row">
+<strong>Missed Calls:</strong> 0
+</div>
+
+<div class="profile-row">
+<strong>Scheduling Support:</strong> Always On
+</div>
+
+<div class="profile-row">
+<strong>Training Required:</strong> None
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="compare">
+
+<h2>Before vs After Pulsar</h2>
+
+<div class="compare-grid">
+
+<div class="before">
+<h3>Before</h3>
+<ul>
+<li>Missed calls after hours</li>
+<li>Busy front desk staff</li>
+<li>Manual scheduling</li>
+<li>Patient communication delays</li>
+</ul>
+</div>
+
+<div class="after">
+<h3>After</h3>
+<ul>
+<li>24/7 patient responses</li>
+<li>Automated scheduling support</li>
+<li>Improved communication workflows</li>
+<li>More efficient front office</li>
+</ul>
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="social-proof">
+
+<div class="proof-box">
+
+<img
+class="practice-logo"
+src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png">
+
+<h2>Growing Smiles Chose Pulsar</h2>
+
+<p>
+Growing Smiles implemented Pulsar to streamline front-office workflows and support patient communication across multiple locations.
+</p>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="quote">
+
+<div class="quote-box">
+
+<p>
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</p>
+
+<div class="author">
+Dr. Samita Gumber • Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="skills">
+
+<h2>What Pulsar Handles Every Day</h2>
+
+<div class="skill">
+<h3>Appointment Scheduling</h3>
+<p>
+Assist patients with booking and coordinating appointments.
+</p>
+</div>
+
+<div class="skill">
+<h3>Patient Communication</h3>
+<p>
+Respond to common inquiries and automate reminders.
+</p>
+</div>
+
+<div class="skill">
+<h3>Workflow Automation</h3>
+<p>
+Reduce repetitive front-desk tasks and improve efficiency.
+</p>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>Add An AI Team Member To Your Practice</h2>
+
+<p>
+See how Pulsar can help your team handle more patient interactions without increasing workload.
+</p>
+
+<a
+href="https://www.gopulsar.app/#bookdemo"
+class="button">
+Book Your Demo
+</a>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="footer">
+
+<p>
+Pulsar AI Dental Front Office Platform<br>
+3315 San Felipe Rd<br>
++1 707-397-5158<br>
+support@gopulsar.app
+</p>
+
+<br>
+
+<p>
+Unsubscribe • Manage Preferences
+</p>
+
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>
+

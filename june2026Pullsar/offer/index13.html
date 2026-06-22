@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Your Front Desk Deserves Better Tools</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#F8FAFC;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+}
+
+img{
+max-width:100%;
+display:block;
+border:0;
+}
+
+table{
+border-spacing:0;
+}
+
+.wrapper{
+width:100%;
+padding:30px 10px;
+background:#F8FAFC;
+}
+
+.container{
+max-width:700px;
+margin:0 auto;
+background:#FFFFFF;
+border-radius:24px;
+overflow:hidden;
+}
+
+.hero{
+padding:70px 40px;
+text-align:center;
+background:linear-gradient(180deg,#ffffff,#f8fafc);
+}
+
+.logo{
+width:180px;
+margin:0 auto 25px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+background:#FEF3C7;
+color:#92400E;
+font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+border-radius:999px;
+text-transform:uppercase;
+margin-bottom:22px;
+}
+
+.hero h1{
+font-size:48px;
+line-height:58px;
+color:#020617;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:30px;
+color:#64748B;
+max-width:560px;
+margin:0 auto;
+}
+
+.story{
+padding:0 40px 50px;
+}
+
+.story-box{
+background:#FFF7ED;
+border-radius:24px;
+padding:40px;
+}
+
+.story-box h2{
+color:#9A3412;
+margin-bottom:15px;
+}
+
+.story-box p{
+line-height:30px;
+color:#7C2D12;
+}
+
+.signs{
+padding:0 40px 50px;
+}
+
+.signs h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+}
+
+.sign{
+background:#FEF2F2;
+border-left:5px solid #EF4444;
+padding:22px;
+margin-bottom:15px;
+border-radius:0 16px 16px 0;
+}
+
+.sign h3{
+color:#991B1B;
+margin-bottom:8px;
+}
+
+.sign p{
+color:#7F1D1D;
+line-height:24px;
+}
+
+.social-proof{
+padding:0 40px 50px;
+}
+
+.proof{
+background:#0F172A;
+padding:40px;
+border-radius:24px;
+text-align:center;
+}
+
+.practice-logo{
+width:180px;
+margin:0 auto 20px;
+}
+
+.proof h2{
+color:#ffffff;
+margin-bottom:15px;
+}
+
+.proof p{
+color:#CBD5E1;
+line-height:28px;
+}
+
+.doctor{
+padding:0 40px 50px;
+}
+
+.doctor-card{
+background:#F8FAFC;
+padding:35px;
+border-radius:24px;
+text-align:center;
+}
+
+.doctor-img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin:0 auto 20px;
+object-position: center top;
+}
+
+.quote{
+font-size:22px;
+line-height:36px;
+font-style:italic;
+color:#334155;
+}
+
+.author{
+margin-top:15px;
+font-weight:700;
+color:#020617;
+}
+
+.benefits{
+padding:0 40px 50px;
+}
+
+.benefits h2{
+text-align:center;
+margin-bottom:25px;
+color:#020617;
+}
+
+.card{
+background:#ECFDF5;
+border:1px solid #BBF7D0;
+padding:24px;
+border-radius:18px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#166534;
+}
+
+.card p{
+color:#166534;
+line-height:24px;
+}
+
+.cta{
+padding:0 40px 60px;
+}
+
+.cta-box{
+background:#3FBCB0;
+padding:50px;
+border-radius:24px;
+text-align:center;
+}
+
+.cta-box h2{
+color:#ffffff;
+margin-bottom:15px;
+}
+
+.cta-box p{
+color:#E6FFFB;
+line-height:28px;
+margin-bottom:30px;
+}
+
+.button{
+display:inline-block;
+padding:18px 40px;
+background:#ffffff;
+color:#0F172A !important;
+text-decoration:none;
+font-weight:700;
+border-radius:12px;
+}
+
+.footer{
+background:#020617;
+padding:40px;
+text-align:center;
+}
+
+.footer p{
+color:#CBD5E1;
+font-size:14px;
+line-height:26px;
+}
+
+@media screen and (max-width:600px){
+
+.hero{
+padding:45px 25px;
+}
+
+.hero h1{
+font-size:34px;
+line-height:44px;
+}
+
+.story,
+.signs,
+.social-proof,
+.doctor,
+.benefits,
+.cta{
+padding-left:20px;
+padding-right:20px;
+}
+
+.cta-box{
+padding:30px 20px;
+}
+
+.button{
+display:block;
+width:100%;
+box-sizing:border-box;
+}
+}
+</style>
+</head>
+
+<body>
+
+<center class="wrapper">
+
+<table width="100%" class="container">
+
+<tr>
+<td class="hero">
+
+<img
+class="logo"
+src="https://images.ctfassets.net/mc1xdogpqbyd/2XOF84De4nmbnUj55yYwYs/37ee72f57eaf05d145f647441245feab/cropped-default.png"
+alt="Pulsar">
+
+<div class="badge">
+Front Desk Burnout
+</div>
+
+<h1>
+Your Front Desk Deserves Better Tools
+</h1>
+
+<p>
+The best patient experience starts with a team that isn't overwhelmed by repetitive administrative work.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td class="story">
+
+<div class="story-box">
+
+<h2>A Typical Day</h2>
+
+<p>
+Phones ringing nonstop. Appointment changes. Insurance questions. Patient reminders. Follow-up calls.
+<br><br>
+Most front-desk teams spend their day reacting instead of focusing on meaningful patient interactions.
+</p>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="signs">
+
+<h2>Signs Of Front Desk Burnout</h2>
+
+<div class="sign">
+<h3>Constant Interruptions</h3>
+<p>
+Staff struggle to complete important tasks because phones never stop ringing.
+</p>
+</div>
+
+<div class="sign">
+<h3>Patient Delays</h3>
+<p>
+Long response times create frustration for both patients and staff.
+</p>
+</div>
+
+<div class="sign">
+<h3>Administrative Overload</h3>
+<p>
+Routine tasks consume hours that could be spent improving patient experiences.
+</p>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="social-proof">
+
+<div class="proof">
+
+<img
+class="practice-logo"
+src="https://thegrowingsmiles.ca/lovable-uploads/938ec48e-ee62-43b3-9547-0f51ac679f34.png"
+alt="Growing Smiles">
+
+<h2>Growing Smiles Took A Different Approach</h2>
+
+<p>
+Growing Smiles leveraged Pulsar to streamline communication workflows, reduce repetitive administrative work, and support a more efficient front-office experience.
+</p>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="doctor">
+
+<div class="doctor-card">
+
+<img
+class="doctor-img"
+src="https://thegrowingsmiles.ca/lovable-uploads/Samita-2.jpg"
+alt="Dr Samita Gumber">
+
+<div class="quote">
+"Pulsar helped us streamline front-office workflows and improve operational efficiency."
+</div>
+
+<div class="author">
+Dr. Samita Gumber • Growing Smiles
+</div>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="benefits">
+
+<h2>What Changes With Pulsar</h2>
+
+<div class="card">
+<h3>Less Administrative Noise</h3>
+<p>
+Automate repetitive communication and scheduling workflows.
+</p>
+</div>
+
+<div class="card">
+<h3>More Time For Patients</h3>
+<p>
+Allow staff to focus on delivering exceptional patient experiences.
+</p>
+</div>
+
+<div class="card">
+<h3>A More Sustainable Workday</h3>
+<p>
+Reduce workload pressure without adding headcount.
+</p>
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="cta">
+
+<div class="cta-box">
+
+<h2>Give Your Team The Support They Need</h2>
+
+<p>
+See how Pulsar can help reduce front-desk workload and create a more efficient patient experience.
+</p>
+
+<a
+href="https://www.gopulsar.app/#bookdemo"
+class="button">
+Book Your Demo
+</a>
+
+</div>
+
+</td>
+</tr>
+
+<tr>
+<td class="footer">
+
+<p>
+Pulsar AI Dental Front Office Platform<br>
+3315 San Felipe Rd<br>
++1 707-397-5158<br>
+support@gopulsar.app
+</p>
+
+<br>
+
+<p>
+Unsubscribe • Manage Preferences
+</p>
+
+</td>
+</tr>
+
+</table>
+
+</center>
+
+</body>
+</html>
+
